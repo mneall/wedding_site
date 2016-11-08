@@ -8,29 +8,42 @@
 	opacity: 0.5;
 }
 
-	#links {
-		margin-top: 3%;
-		margin-left: 26%;
-	}
-
-#container {
-	background-color: #F7F7F7;
-	width: 100%;
-	min-height: 1000px;
-	padding-top: 200px;
+.navbar-collapse {
+  max-height: none;
 }
 
-#navbar a {
-	display: inline-block;
+#links {
+	margin-top: 1%;
+	margin-left: 15%;
+}
 
+#wrapper {
+	background-color: pink;
+	width: 100%;
+	min-height: 1000px;
+	padding-top: 100px;
 }
 
 #nav1 {
+	position: relative;
 	margin: 0 auto;
 	height: 500px;
 	width: 900px;
-	background-color: coral;
+	background-image: url('/pix/DSC_9383.jpg');
+	background-size: 100%;
 }
+
+	#nav1 h2 {
+		color: white;
+   		position: absolute;
+   		bottom: 0;
+   		margin-left: 400px;
+	}
+
+	canvas {
+		margin-left: 215px;
+		margin-top: 225px;
+	}
 
 #nav2 {
 	margin: 0 auto;
@@ -65,6 +78,14 @@
 }
 
 #nav6 {
+	margin: 0 auto;
+	margin-top: 100px;
+	height: 500px;
+	width: 900px;
+	background-color: coral;
+}
+
+#nav7 {
 	margin: 0 auto;
 	margin-top: 100px;
 	height: 500px;
