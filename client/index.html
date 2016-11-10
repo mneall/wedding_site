@@ -3,7 +3,7 @@
 <head>
 	<title>Index</title>
 	<script src="app.js"></script>
-	<link href="https://fonts.googleapis.com/css?family=Cedarville Cursive|Redressed|Stalemate" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cedarville Cursive" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -32,27 +32,40 @@
 		</div>
 	</nav>
 
-	<div id="wrapper" class="container">
+	<div id="wrapper" class="container col-sm-6 col-md-4 col-lg-2">
 
 
 
 
 	
 	<div id="nav1">
-		<div id="container">
-			<canvas width=700 height=200></canvas>
-			<h2>Some text here</h2>
-		</div>
+			<h1>The Jackson Love Affair</h1> 
+			<!-- <canvas width=700 height=200></canvas> -->
 	</div>
+	<div id="subheader">
+		<h4> “Therefore what God has joined together, let no one separate." Mark 10:9</h4>
+		<h4>Date: August 18, 2017</h4>
+		<h4>Location: Detroit, MI</h4>
+		<h4>Formal invitation to follow</h4>
+		</div>
 	<div id="nav2">
 		<h2>Our Story</h2>
+		<ul id="ourstorylist">
+			<li id="ourstory1"><p>Corey and Erika met in 2006 during Erika's first week at Michigan State University. The two quickly developed a strong friendship, affectionately nicknaming each other "Fav", short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out...They were meant to be.</p><p>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p></li>
+			<li id="ourstory2">When I saw you I fell in love, and you smiled because you knew. - William Shakespeare<span>Bride: Erika Elyse Willis</span></li>
+			<li id="ourstory3">I love you more than any word can say, I love you more than any action I take, I'll be right here loving you until the end.</li>
+		</ul>
 	</div>
 	<div id="nav3">
 		<h2>The Wedding</h2>
 	</div>
-	<div id="nav4">
-		<h2>The Bridal Party</h2>
+	<div>
+
 	</div>
+<!-- 	<div id="nav4">
+		<h2>The Bridal Party</h2>
+	</div> -->
+	<!-- separate page for bridal party -->
 	<div id="nav5">
 		<h2>Parking and Accommodations</h2>
 	</div>
@@ -67,11 +80,11 @@
 		var ctx = document.querySelector("canvas").getContext("2d"),
 	dashLen = 220,
 	dashOffset = dashLen,
-	speed = 50,
+	speed = 60,
 	txt = "the jackson love affair",
 	x = 30, i = 0;
 
-	ctx.font = "50px Redressed, TSCu_Comic, sans-serif";
+	ctx.font = "50px Permanent Marker, TSCu_Comic, sans-serif";
 	ctx.lineWidth = 2;
 	ctx.lineJoin = "round";
 	ctx.globalAlpha = 1;

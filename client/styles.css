@@ -4,8 +4,8 @@
 	position: fixed;
 	top: 0;
 	z-index: 9999;
-	background-color: #F8F8F7;
-	opacity: 0.5;
+	/*background-color: #A305A9;*/
+	background-color: rgba(163,5,169, 0.2);
 }
 
 .navbar-collapse {
@@ -18,46 +18,82 @@
 }
 
 #wrapper {
-	background-color: pink;
 	width: 100%;
 	min-height: 1000px;
 	padding-top: 100px;
 }
 
+#subheader {
+	width: 50%;
+	text-align: center;
+	margin-left: 25%;
+}
+
+
 #nav1 {
+	vertical-align: text-bottom;
+	text-align: center;
 	position: relative;
 	margin: 0 auto;
 	height: 500px;
-	width: 900px;
+	width: 100%;
 	background-image: url('/pix/DSC_9383.jpg');
 	background-size: 100%;
+	background-repeat: no-repeat;
+	/*border: 25px solid white;*/
 }
 
-	#nav1 h2 {
-		color: white;
-   		position: absolute;
-   		bottom: 0;
-   		margin-left: 400px;
+	#nav1 h1 {
+		position: absolute;
+		margin-left: 30%;
+		bottom: 60px;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 3.0em;
+		font-family: "Cedarville Cursive";
 	}
 
 	canvas {
-		margin-left: 215px;
-		margin-top: 225px;
+		margin: auto auto 50px;	
 	}
 
 #nav2 {
 	margin: 0 auto;
 	margin-top: 100px;
 	height: 500px;
-	width: 900px;
+	width: 90%;
 	background-color: coral;
 }
+
+	#ourstorylist {
+		list-style-type: none;
+ 		list-style-position: outside;
+ 		list-style-image: none;
+ 		height: 500px;
+ 		padding: 0;
+
+	}
+
+		#ourstorylist li {
+			padding: 50px;
+			margin: 0 auto;
+		}
+
+		#ourstory1 {
+			background-image: url('/pix/DSC_9187.jpg');
+			background-size: 100%;
+			background-repeat: no-repeat;
+			height: 100%;
+
+		}
+
+
 
 #nav3 {
 	margin: 0 auto;
 	margin-top: 100px;
 	height: 500px;
-	width: 900px;
+	width: 90%;
 	background-color: coral;
 }
 
@@ -65,7 +101,7 @@
 	margin: 0 auto;
 	margin-top: 100px;
 	height: 500px;
-	width: 900px;
+	width: 90%;
 	background-color: coral;
 }
 
@@ -73,7 +109,7 @@
 	margin: 0 auto;
 	margin-top: 100px;
 	height: 500px;
-	width: 900px;
+	width: 90%;
 	background-color: coral;
 }
 
@@ -81,7 +117,7 @@
 	margin: 0 auto;
 	margin-top: 100px;
 	height: 500px;
-	width: 900px;
+	width: 90%;
 	background-color: coral;
 }
 
@@ -89,6 +125,6 @@
 	margin: 0 auto;
 	margin-top: 100px;
 	height: 500px;
-	width: 900px;
+	width: 90%;
 	background-color: coral;
 }
