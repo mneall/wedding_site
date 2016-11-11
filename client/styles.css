@@ -40,7 +40,7 @@
 	background-image: url('/pix/DSC_9383.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
-	/*border: 25px solid white;*/
+	box-shadow: 2px 2px 10px #ccc;
 }
 
 	#nav1 h1 {
@@ -57,45 +57,83 @@
 		margin: auto auto 50px;	
 	}
 
-#nav2 {
+#carouselbox {
 	margin: 0 auto;
 	margin-top: 100px;
-	height: 500px;
-	width: 90%;
+	height: 600px;
+	width: 900px;
 	background-color: coral;
+	overflow: hidden;
+	position: relative;
+	box-shadow: 2px 2px 10px #ccc;
 }
 
-	#ourstorylist {
-		list-style-type: none;
- 		list-style-position: outside;
- 		list-style-image: none;
- 		height: 500px;
- 		padding: 0;
+	.active {
+		height: 500px;
+	}
+	
+	#nav2 h2 {
 
 	}
 
-		#ourstorylist li {
+	ul#ourstorylist {
+		list-style-type: none;
+ 		list-style-position: outside;
+ 		list-style-image: none;
+ 		height: inherit;
+ 		width: inherit;
+ 		padding: 0;
+ 		position: absolute;
+ 		overflow: hidden;
+ 		/*white-space: nowrap;*/
+
+	}
+
+		ul#ourstorylist li {
 			padding: 50px;
 			margin: 0 auto;
+			display: block;
+			height: 100%;
+			float: left;
+			position: relative;
 		}
 
-		#ourstory1 {
+		ul#ourstorylist li#ourstory1 {
 			background-image: url('/pix/DSC_9187.jpg');
 			background-size: 100%;
 			background-repeat: no-repeat;
 			height: 100%;
+			padding-right: 450px;
+			padding-top: 200px;
+
+		}
+
+		ul#ourstorylist li#ourstory2 {
+			background-image: url('/pix/DSC_9188.jpg');
+			background-size: 100%;
+			background-repeat: no-repeat;
+			height: 100%;
+			padding-right: 400px;
 
 		}
 
 
-
-#nav3 {
-	margin: 0 auto;
-	margin-top: 100px;
+#thewedding {
+	position: relative;
+	margin: 100px auto 25px auto;
 	height: 500px;
-	width: 90%;
-	background-color: coral;
+	width: 100%;
+	background-image: url('/pix/DSC_9574.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	box-shadow: 2px 2px 10px #ccc;
 }
+
+	#weddingdivtext {
+		width: 250px;
+		text-align: center;
+		margin: 0 auto;
+	}
 
 #nav4 {
 	margin: 0 auto;
