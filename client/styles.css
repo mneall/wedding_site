@@ -13,9 +13,12 @@
 }
 
 #links {
-	margin-top: 1%;
-	margin-left: 15%;
+	margin: 20px auto 20px auto;
 }
+
+	#links li {
+		display: inline-block;
+	}
 
 #wrapper {
 	width: 100%;
