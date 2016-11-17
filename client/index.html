@@ -4,6 +4,7 @@
 	<title>The Jackson Love Affair</title>
 	<script src="app.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Cedarville Cursive" rel="stylesheet">
+	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 </head>
@@ -22,27 +23,36 @@
 		</div>
 	</nav>
 
-	<div id="wrapper" class="container col-sm-6 col-md-4 col-lg-2">
+	<div id="wrapper">
 
 
 
 
-	
-	<div id="nav1">
+	<div class="top-photo parallax"></div>
+<!-- 	<div id="nav1">
 			<h1>The Jackson Love Affair</h1> 
-			<!-- <canvas width=700 height=200></canvas> -->
 	</div>
+ -->
+ 			<!-- <canvas width=700 height=200></canvas> -->
 	<div id="subheader">
 		<h4> “Therefore what God has joined together, let no one separate." Mark 10:9</h4>
 		</div>
-	<div id="carouselbox" class="active">
+	<div class="w3-content w3-display-container relative">
+		<div class="mySlides relative slide1 parallax"><p class="top">Corey and Erika met in 2006 during Erika's first week at Michigan State University. The two quickly developed a strong friendship, affectionately nicknaming each other "Fav", short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out...They were meant to be.<br/>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p><!-- <img src="/pix/IMG_4722.jpg"> --></div>
+		<div class="mySlides relative slide2 parallax"><p class="top">Bride: Erika Elyse Willis<br/>When I saw you I fell in love, and you smiled because you knew. - William Shakespeare</p><!-- <img src="/pix/DSC_9161.jpg"> --></div>
+		<div class="mySlides relative slide3 parallax"><p class="top">Groom: Corey Antoine Jackson<br/>I love you more than any word can say, I love you more than any action I take, I'll be right here loving you until the end.</p><!-- <img src="/pix/DSC_9368.jpg"> --></div>
+		<a class="w3-btn-floating w3-display-left" onclick="plusDivs(-1)">&#10094;</a>
+		<a class="w3-btn-floating w3-display-right" onclick="plusDivs(1)">&#10095;</a>
+	</div>
+
+<!-- 	<div id="carouselbox" class="active">
 		
 		<ul id="ourstorylist">
 			<li id="ourstory1"><h2>Our Story</h2><p>Corey and Erika met in 2006 during Erika's first week at Michigan State University. The two quickly developed a strong friendship, affectionately nicknaming each other "Fav", short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out...They were meant to be.</p><p>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p></li>
 			<li id="ourstory2">When I saw you I fell in love, and you smiled because you knew. - William Shakespeare<span>Bride: Erika Elyse Willis</span></li>
 			<li id="ourstory3">I love you more than any word can say, I love you more than any action I take, I'll be right here loving you until the end.</li>
 		</ul>
-	</div>
+	</div> -->
 	<div id="thewedding">
 		
 	</div>
@@ -57,9 +67,9 @@
 		<h2>The Bridal Party</h2>
 	</div> -->
 	<!-- separate page for bridal party -->
-	<div id="nav5">
+<!-- 	<div id="nav5">
 		<h2>Parking and Accommodations</h2>
-	</div>
+	</div> -->
 	<div id="nav6">
 		<h2>Registry</h2>
 	</div>
@@ -67,7 +77,7 @@
 		<h2>RSVP</h2>
 	</div>
 	</div>
-	<script type="text/javascript">
+	<!-- <script type="text/javascript">
 		var ctx = document.querySelector("canvas").getContext("2d"),
 	dashLen = 220,
 	dashOffset = dashLen,
@@ -97,7 +107,28 @@
     if (i < txt.length) requestAnimationFrame(loop);
   }
 })();
-	</script>
+	</script> -->
+
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+  		showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  	var i;
+	  	var x = document.getElementsByClassName("mySlides");
+	  	var elements = Array.prototype.slice.call(x);
+	  	elements.forEach(function(element){
+	  		element.classList.remove('show');
+	  	});
+	  	if (n > x.length) {slideIndex = 1}
+	  	if (n < 1) {slideIndex = x.length}
+	  	x[slideIndex-1].classList.add('show');
+	}
+s</script>
 	<div id="footer">
 		<div id="footertext">
 			<p>Website by <a href="mailto:neallmr@gmail.com">Matt Neall</a> |</p>
