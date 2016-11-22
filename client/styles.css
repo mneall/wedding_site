@@ -1,22 +1,27 @@
 body {
-	background-color: rgba(206, 204, 186, 0.5);
+	background-color: rgba(206, 204, 186, 0.1);
+/*	background-image: url('/pix/DSC_9204.jpg');
+	background-repeat: no-repeat;
+	background-size: 963px 1080px;
+	background-position: center;*/
 }
 
 .top-photo {
     /* The image used */
-    background-image: url('/pix/DSC_9383.jpg');	
+    background-image: url('/pix/DSC_9383.jpg');
+    background-position-y: 100px; 
 }
 
 .parallax {
 
     /* Full height */
-    min-height: 800px;
+    min-height: 700px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-position-y: 100px;
+    background-position-y: 0px;
     background-size: cover;
 }
 
@@ -26,37 +31,77 @@ body {
 
 #navbar {
 	width: 100%;
-	height: 100px;
-	position: fixed;
+	height: 50px;
+	position: relative;
 	top: 0;
 	z-index: 9999;
-	/*background-color: #A305A9;*/
-	background-color: rgba(206, 204, 186, 0.1);
-}
-
-.navbar-collapse {
-  max-height: none;
+	background-color: rgba(206, 204, 186, 0.4);
 }
 
 #links {
-	margin: 20px auto 20px auto;
+	margin: 0px auto;
+	padding: 0px;
+	position: absolute;
+	top: 10px;
+	left: 30%;
 }
 
 	#links li {
+		margin-left: 10px;
 		display: inline-block;
+		font-weight: bolder;
+	}
+
+	#links li a {
+		text-decoration: none;
+		font-size: 1.1em;
+		color: white;
+		opacity: 0.5;
 	}
 
 #wrapper {
 	width: 100%;
-	min-height: 1000px;
-	padding-top: 100px;
+	min-height: 600px;
+	/*padding-top: 100px;*/
+	/*background-position-y: 100px;*/
 }
+
+.title {
+	position: absolute;
+	bottom: 100px;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(206, 204, 186, 0.4);
+	color: #fed;
+}
+
+	.titletext {
+		font-family: "Permanent Marker";
+		text-align: center;
+		font-size: 3.0em;
+
+	}
 
 #subheader {
 	width: 50%;
 	text-align: center;
 	margin-left: 25%;
 }
+
+.spacer {
+	height: 500px;
+	width: 100%;
+	background-color: rgba(206, 204, 186, 0.4);
+	position: relative;
+}
+
+	.spacer div {
+		width: 550px;
+		text-align: center;
+		position: absolute;
+		top: 10%;
+		left: 30%;
+	}
 
 
 #nav1 {
@@ -82,9 +127,9 @@ body {
 		font-family: "Cedarville Cursive";
 	}
 
-	canvas {
+	/*canvas {
 		margin: auto auto 50px;	
-	}
+	}*/
 
 	.w3-content {
 		max-width: 100%;
@@ -98,15 +143,17 @@ body {
 
 	.mySlides.slide1 {
     	background-image: url('/pix/IMG_4722.jpg');
-    	background-position-y: -50px; 	
+    	background-position-y: -150px;
+    	min-height: 650px;
 	}
 	.mySlides.slide2 {
     	background-image: url('/pix/DSC_9161.jpg');
-    	background-position-y: -50px; 	
+    	min-height: 650px;	
 	}
 	.mySlides.slide3 {
     	background-image: url('/pix/DSC_9368.jpg');
-    	background-position-y: -100px; 	
+    	background-position-y: -125px;
+    	min-height: 650px;
 	}
 
 /*	.mySlides img {
@@ -124,16 +171,32 @@ body {
 		background-color: rgba(112, 66, 20, 0.2);
 	}
 
-	.bottom {
+	.left {
 		position: absolute;
-		bottom: 0;
-		width: 100%;
+		width: 45%;
 		color: white;
+		margin-top: 500px;
 		padding: 10px 50px;
 		font-size: 1.1em;
-		text-align: center;
-		background-color: rgba(112, 66, 20, 0.3);
+		text-align: left;
+		background-color: rgba(112, 66, 20, 0.2);
 	}
+
+	.right {
+		position: absolute;
+		right: 0;
+		width: 45%;
+		color: white;
+		margin-top: 150px;
+		padding: 10px 50px;
+		font-size: 1.1em;
+		text-align: right;
+		background-color: rgba(112, 66, 20, 0.2);
+	}
+
+		.right p {
+			width: 500px;
+		}
 
 	.mySlides.show {
 		display: block;
@@ -202,7 +265,7 @@ body {
 
 #thewedding {
 	position: relative;
-	margin: 100px auto 25px auto;
+	margin: 0 auto;
 	height: 500px;
 	width: 100%;
 	background-image: url('/pix/DSC_9574.jpg');
