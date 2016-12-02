@@ -13,12 +13,12 @@ app.get('/', function(req, res){
 	res.render('index.html');
 });
 
-app.get('/bridalparty', function(req, res){
-	res.render('bridalparty.html');
+app.get('/rsvp', function(req, res){
+	res.render('rsvp.html');
 });
 
 // RUN SERVER
 
-app.listen(8000, function(){
+app.listen(9000, function(){
 	console.log('server is running');
 });

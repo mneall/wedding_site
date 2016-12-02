@@ -7,9 +7,8 @@ body {
 }
 
 .top-photo {
-    /* The image used */
     background-image: url('/pix/DSC_9383.jpg');
-    background-position-y: 100px; 
+    background-position-y: 100px;
 }
 
 .parallax {
@@ -31,32 +30,34 @@ body {
 
 #navbar {
 	width: 100%;
-	height: 50px;
-	position: relative;
-	top: 0;
+	height: 100px;
+	position: fixed;
+	bottom: 0;
 	z-index: 9999;
-	background-color: rgba(206, 204, 186, 0.4);
+	background-color: #DAE8F3;
+	border-top: solid 0.5px rgba(200, 214, 225, 1);
+	box-shadow: 0px 10px 25px 0px #333;
 }
 
-#links {
-	margin: 0px auto;
+.links {
 	padding: 0px;
-	position: absolute;
-	top: 10px;
-	left: 30%;
+	margin: 0 auto;
+	width: 600px;
 }
 
-	#links li {
-		margin-left: 10px;
+	.links li {
+		margin-top: 10px;
+		margin-left: 15px;
 		display: inline-block;
 		font-weight: bolder;
 	}
 
-	#links li a {
+	.links li a {
 		text-decoration: none;
-		font-size: 1.1em;
-		color: white;
-		opacity: 0.5;
+		font-size: 1.8em;
+		color: #86848F;
+		font-family: "Sue Ellen Francisco";
+		/*text-shadow: -1px 1px 1px #0E2038;*/
 	}
 
 #wrapper {
@@ -68,39 +69,68 @@ body {
 
 .title {
 	position: absolute;
-	bottom: 100px;
+	bottom: 190px;
 	width: 100%;
 	text-align: center;
-	background-color: rgba(206, 204, 186, 0.4);
-	color: #fed;
+	background-color: rgba(218, 232, 243, 0.5);
+	color: #0E2038;
 }
 
 	.titletext {
-		font-family: "Permanent Marker";
+		font-family: "Alex Brush";
 		text-align: center;
-		font-size: 3.0em;
+		font-size: 5em;
+		text-shadow: -2px 2px 1px #86848F;
+		margin-bottom: -14px;
+	}
 
+	#ourstory {
+		position: relative;
+	}
+
+	#ourstory h2 {
+		font-family: "Sue Ellen Francisco";
+		font-size: 3.0em;
+		color: #0E2038;
+		text-shadow: -2px 2px 1px #86848F;
+		/*position: absolute;*/
+		/*left: 0;*/
+	}
+
+	#ourstory p {
+		color: #0E2038;
+		font-family: "Covered By Your Grace";
+		font-size: 1.8em;
 	}
 
 #subheader {
-	width: 50%;
-	text-align: center;
-	margin-left: 25%;
-}
-
-.spacer {
-	height: 500px;
 	width: 100%;
-	background-color: rgba(206, 204, 186, 0.4);
-	position: relative;
+	text-align: center;
 }
 
-	.spacer div {
-		width: 550px;
+	#subheader h3 {
+		font-family: "Covered By Your Grace";
+	}
+
+.spacer1 {
+	height: 650px;
+	width: 100%;
+	background-color: #fff5f0;
+	position: relative;
+} 
+
+	.spacer1 #ourstory {
+		width: 600px;
 		text-align: center;
 		position: absolute;
-		top: 10%;
+		top: 5%;
 		left: 30%;
+	}
+
+	.spacer1 #ourstory .ourstorytext {
+		margin: 0 auto;
+		text-align: left;
+		line-height: 1.2;
 	}
 
 
@@ -141,6 +171,27 @@ body {
 		position: relative;
 	}
 
+	.mySlides p {
+		font-family: "Covered By Your Grace";
+		color: #DAE8F3;
+		font-size: 2em;
+		text-shadow: -2px 2px 1px #0E2038;
+	}
+
+		.gallery-title {
+			font-family: "Sue Ellen Francisco";
+			color: #DAE8F3;
+		}
+
+		.name {
+			font-family: "Alex Brush";
+			font-size: 1.4em;
+			color: #FFF5F0;
+			text-shadow: -2px 2px 1px #86848F;
+		}
+
+
+
 	.mySlides.slide1 {
     	background-image: url('/pix/IMG_4722.jpg');
     	background-position-y: -150px;
@@ -152,53 +203,74 @@ body {
 	}
 	.mySlides.slide3 {
     	background-image: url('/pix/DSC_9368.jpg');
-    	background-position-y: -125px;
+    	background-position-y: -190px;
     	min-height: 650px;
 	}
+
+	.gallerydots,
+	.gallerydots {
+		bottom: 12px;
+	}
+
+	.partyGallery .gallerydots {
+		bottom: 60px;
+	}
+
+
+	.gallerydots span, 
+	#sidebar li a span {
+		height: 15px;
+		width: 15px;
+		padding: 0;
+		border: 2px solid gray;
+	}
+
+
+
 
 /*	.mySlides img {
 		width: 100%;
 	}
 */
-	.top {
+	.bottom {
 		position: absolute;
 		width: 100%;
 		color: white;
-		margin-top: 100px;
-		padding: 10px 50px;
+		margin-top: 555px;
+		padding: 5px 50px;
 		font-size: 1.1em;
 		text-align: center;
-		background-color: rgba(112, 66, 20, 0.2);
+		background-color: rgba(14, 32, 56, 0.5);
 	}
 
 	.left {
 		position: absolute;
-		width: 45%;
+		width: 33%;
 		color: white;
-		margin-top: 500px;
+		margin-top: 100px;
 		padding: 10px 50px;
-		font-size: 1.1em;
+		font-size: 1.9em;
 		text-align: left;
-		background-color: rgba(112, 66, 20, 0.2);
+		background-color: rgba(14, 32, 56, 0.5);
 	}
 
 	.right {
 		position: absolute;
 		right: 0;
-		width: 45%;
+		width: 30%;
 		color: white;
-		margin-top: 150px;
+		margin-top: 100px;
 		padding: 10px 50px;
 		font-size: 1.1em;
-		text-align: right;
-		background-color: rgba(112, 66, 20, 0.2);
+		text-align: left;
+		background-color: rgba(14, 32, 56, 0.5);
 	}
 
 		.right p {
 			width: 500px;
 		}
 
-	.mySlides.show {
+	.mySlides.show, .partySlides.show {
 		display: block;
 	}
 
@@ -262,23 +334,269 @@ body {
 
 		}
 
+.event-date-and-location {
+	height: 125px;
+	width: 550px;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+}
 
-#thewedding {
+.event-date {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.event-location {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+.small-box {
+	width: 49.79%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.divider {
+	margin: 20px 0;
+	height: 75%;
+	width: 1px;
+	border: 1px solid #86848F;
+	float: left;
+}
+
+	.event-title {
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		top: 0;
+		color: #0E2038;
+	}
+
+	.event-text {
+		width: 100%;
+		text-align: center;
+		position: absolute;
+		bottom: 0;
+		color: #0E2038;
+	}
+
+	.rsvp-box {
+		height: 50px;
+		width: 100px;
+		text-align: center;
+		border: 4px solid #86848F;
+		margin: 15px auto 0px auto;
+		box-shadow: -2px 2px 2px #888888;
+	}
+
+		.rsvp-box a {
+			text-decoration: none;
+		}
+
+		.rsvp-box h3 {
+			margin: 3px auto;
+			vertical-align: middle;
+			padding: 0;
+			font-family: "Sue Ellen Francisco";
+			font-size: 2em;
+			color: #0E2038;
+		}
+
+		#formal-invitation {
+			margin-top: 25px;
+		}
+
+.spacer2 {
+	height: 640px;
+	width: 100%;
+	background-color: #fff5f0;
+	position: relative;
+}
+
+.ringphoto {
 	position: relative;
 	margin: 0 auto;
-	height: 500px;
+	height: 650px;
 	width: 100%;
 	background-image: url('/pix/DSC_9574.jpg');
 	background-size: 100%;
 	background-repeat: no-repeat;
-	box-shadow: 2px 2px 10px #ccc;
+	filter: grayscale(0.4);
+	z-index: -1;
 }
 
-	#weddingdivtext {
-		width: 250px;
-		text-align: center;
-		margin: 0 auto;
+.ringphotofilter {
+
+  	height: 100%;
+  	width: 100%;
+  	position: absolute;
+}
+	
+	.ringphototext {
+		color: #0E2038;
+		z-index: 999999;
+		width: 50%;
+		left: 26%;
+		padding-top: 195px;
+		position: absolute;
+		z-index: 0;
 	}
+
+		.ringphototext p {
+			font-family: "Covered By Your Grace";
+			font-size: 2em;
+			z-index: 99999;
+			text-shadow: 0px 0px 2px #FFF5F0;
+		}
+
+		.closing {
+			width: 60%;
+			margin-left: 22%;
+		}
+
+		.signed {
+			margin-top: -25px;
+		}
+
+	#weddingdivtext {
+		position: absolute;
+		padding: 100px 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		margin-top: 40px;
+		word-wrap: break-word;
+		text-align: center;
+	}
+
+	#weddingdivtext h1 {
+		font-family: "Sue Ellen Francisco";
+		text-shadow: -2px 2px 1px #86848F;
+		color: #0E2038;
+	}
+
+	#weddingdivtext h4 {
+		font-family: "Sue Ellen Francisco";
+		font-size: 2em;
+		color: #0E2038;
+	}
+
+.spacer3 {
+	height: 875px;
+	width: 100%;
+	background-color: #FFF5F0;
+	position: relative;
+	clear: both;
+	text-align: center;
+	padding-top: 20px;
+} 
+
+	#weddingparty {
+		/*clear: both;*/
+		width: 100%;
+		margin-bottom: 20px;
+	}
+
+	#weddingparty h1 {
+		margin: 0;
+		color: #0E2038;
+		font-family: "Sue Ellen Francisco";
+	}
+
+	#leftgallerybox {
+		display: block;
+		width: 49%;
+		min-height: 100px;
+		float: left;
+	}
+
+	#rightgallerybox {
+		display: block;
+		width: 49%;
+		min-height: 100px;
+		float: right;
+	}
+
+	.spacer3 ul {
+		flex-direction: row;
+		list-style: none;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		align-content: space-between;
+		margin: 0;
+		padding: 2px;
+	}
+
+	.spacer3 li {
+		text-align: center;
+		background-color: #0E2038;
+		flex: 0 160px;
+		margin: 2px;
+	}
+
+	.invisible {
+		height: 0;
+	}
+
+	.invisible img {
+		height: 0;
+		width: 0;
+	}
+
+	.invisible figcaption {
+		height: 0;
+		padding: 0;
+	}
+
+	.spacer3 img {
+		height: 150px;
+		filter: grayscale(0.25);
+	}
+
+	.cropped {
+		max-width: 145px;
+		overflow: hidden;
+		margin: 0 auto;
+		display: block;
+		/*text-indent: -19px;*/
+	}
+
+	figure {
+		margin: 0;
+		display: block;
+		position: relative;
+	}
+
+	figcaption {
+		background: #0E2038;
+		display: block;
+		/*position: absolute;*/
+		/*bottom: 0;*/
+		width: 100%;
+		text-align: center;
+		color: #DAE8F3;
+		padding: 4px;
+		box-sizing: border-box;
+		font-family: "Covered By Your Grace";
+		font-size: 1.3em;
+	}
+
+.spacer4 {
+	height: 700px;
+	width: 100%;
+	background-color: red;
+}
+
+	.dw-panel img {
+  		max-height: 5%;
+	}
+
 
 #nav4 {
 	margin: 0 auto;
@@ -313,18 +631,18 @@ body {
 
 #footer {
 	width: 100%;
-	height: 100px;
+	height: 20px;
 	bottom: 0;
-	z-index: 9999;
-	/*background-color: #A305A9;*/
-	background-color: rgba(112, 66, 20, 0.1);
 }
 
 #footertext {
-	width: 450px;
-	margin: 20px auto;
+	width: 100%;
+	white-space: nowrap;
+	text-align: center;
 }
 
  #footer p {
+ 	font-size: 0.9em;
  	display: inline-block;
+ 	color: #CCC;
  }
