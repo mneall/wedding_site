@@ -542,6 +542,7 @@ body {
 
 	.invisible {
 		height: 0;
+		visibility: hidden;
 	}
 
 	.invisible img {
