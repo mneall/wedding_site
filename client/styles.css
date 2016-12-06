@@ -176,6 +176,7 @@ body {
 		color: #DAE8F3;
 		font-size: 2em;
 		text-shadow: -2px 2px 1px #0E2038;
+		line-height: 1.1;
 	}
 
 		.gallery-title {
@@ -236,7 +237,7 @@ body {
 		position: absolute;
 		width: 100%;
 		color: white;
-		margin-top: 555px;
+		margin-top: 550px;
 		padding: 5px 50px;
 		font-size: 1.1em;
 		text-align: center;
@@ -487,7 +488,7 @@ body {
 	}
 
 .spacer3 {
-	min-height: 1100px;
+	height: 1000px;
 	width: 100%;
 	background-color: #FFF5F0;
 	position: relative;
@@ -513,6 +514,7 @@ body {
 		width: 49%;
 		min-height: 100px;
 		float: left;
+		padding-bottom: 10%;
 	}
 
 	#rightgallerybox {
@@ -520,6 +522,7 @@ body {
 		width: 49%;
 		min-height: 100px;
 		float: right;
+		padding-bottom: 10%;
 	}
 
 	.spacer3 ul {
