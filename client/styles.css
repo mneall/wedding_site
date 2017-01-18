@@ -7,7 +7,7 @@ body {
 }
 
 .top-photo {
-    background-image: url('/pix/DSC_9383.jpg');
+    background-image: url('/pix/DSC_9383_prod.jpg');
     background-position-y: 100px;
 }
 
@@ -650,3 +650,29 @@ body {
  	display: inline-block;
  	color: #CCC;
  }
+
+@media only screen and (max-device-width: 500px) {
+	html, body {
+		font-size: 30px;
+	}
+
+	.top-photo {
+    	background-image: url('/pix/DSC_9383_cropped.jpg');
+    	background-position-y: 100px;
+	}
+
+    .parallax {
+        background-attachment: scroll;
+    }
+    .title {
+    	bottom: inherit;
+    	top: 190px;
+    }
+    #subheader {
+    	/*font-size: 125%;*/
+    }
+    ,left {
+    	position: initial;
+    	width: 100%;
+    }
+}
