@@ -666,10 +666,10 @@ body {
     }
     .title {
     	bottom: inherit;
-    	top: 620px;
+    	top: 600px;
     }
-    #subheader {
-    	/*font-size: 125%;*/
+    #subheader h3{
+    	font-size: 200%;
     }
 
     	.mySlides.slide1 {
