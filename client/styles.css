@@ -658,7 +658,7 @@ body {
 
 	.top-photo {
     	background-image: url('/pix/IMG_4723_prod2.jpg');
-    	min-height: 1400px;
+    	min-height: 1500px;
 	}
 
     .parallax {
@@ -671,6 +671,26 @@ body {
     #subheader h3{
     	font-size: 200%;
     }
+
+    .spacer1 {
+    	height: 4000px;
+    }
+
+    .spacer1 #ourstory {
+    	width: initial;
+    	top: initial;
+    	left: initial;
+		margin: 0 auto;
+	}
+
+	.spacer1 #ourstory .ourstorytext {
+		padding: 0px 75px;
+	}
+
+	.spacer1 #ourstory .ourstorytext p {
+		padding-bottom: 10px;
+		font-size: 2.9em;
+	}
 
     	.mySlides.slide1 {
     	background-image: url('/pix/IMG_4722.jpg');
