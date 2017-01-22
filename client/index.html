@@ -2,11 +2,12 @@
 <html>
 <head>
 	<title>The Jackson Love Affair</title>
-	<script src="app.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Sue Ellen Francisco|Covered By Your Grace|Alex Brush" rel="stylesheet">
 	<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" type="text/css" href="driveway.min.css">
+	<script src="https://use.fontawesome.com/4b9f7dd5c8.js"></script>
+	<script src="app.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -60,15 +61,24 @@
  		<div class="spacer1" id="spacer1">
  			<div id="ourstory">
  				<h2>OUR  &nbsp;STORY</h2>
+	 		
+
  				<div class="ourstorytext">
-	 				<p>Corey and Erika met in 2006 during Erika's first week at Michigan State University. The two quickly developed a strong friendship, affectionately nicknaming each other "Fav," short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out&nbsp;.&nbsp;.&nbsp;.&nbsp;they were meant to be.<br/><br/>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p>
+ 					
+
+	 				<p>Corey and Erika met in 2006 during Erika's first week at Michigan State University.</p> 
+
+	 				<p class="moretext">The two quickly developed a strong friendship, affectionately nicknaming each other "Fav," short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out&nbsp;.&nbsp;.&nbsp;.&nbsp;they were meant to be.<br/><br/>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p>
+	 				<button class="fa fa-chevron-down fa-3x" aria-hidden="true"></button>
+
+
 	 			</div>
  			</div>
  		</div>
 
 		<div class="w3-content w3-display-container relative">
 			<div class="mySlides relative parallax slide1"><p class="bottom">Walking with your hands in mine and mine in yours, that’s exactly where I want to be, always. —Fawn Weaver</p></div>
-			<div class="mySlides relative parallax slide2"><p class="right"><span class="gallery-title">BRIDE<br/></span><span class="name">Erika Elyse Willis</span><br/>When I saw you I fell in love, and you smiled because you knew.<br/>- William Shakespeare</p><!-- <img src="/pix/DSC_9161.jpg"> --></div>
+			<div class="mySlides relative parallax slide2"><p class="right"><span class="gallery-title">BRIDE<br/></span><span class="name">Erika Elyse Willis</span><br/>When I saw you I fell in love, and you smiled because you knew.<br/>- William Shakespeare</p></div>
 			<div class="mySlides relative parallax slide3"><p class="left"><span class="gallery-title">GROOM<br/></span><span class="name">Corey Antoine Jackson</span><br/>I love you more than any word can say, I love you more than any action I take, I'll be right here loving you until the end.</p></div>
 			<div class="w3-display-bottommiddle gallerydots">
 				<span class="w3-badge dot w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
@@ -342,10 +352,32 @@
 
 	
 <script type="text/javascript">
+
+
 		var slideIndex = 1,
 		myAutoPlay,
 		dots;
 	showDivs(slideIndex);
+
+
+
+	function expandtoggle(){
+		var btn = $('.ourstorytext button');
+		var txt = $('.ourstorytext .moretext');
+		var container = $('.spacer1');
+		if (btn.hasClass('fa-chevron-down')){
+			btn.removeClass('fa-chevron-down');
+			btn.addClass('fa-chevron-up');
+			container.addClass('tall');
+
+		} else {
+			btn.removeClass('fa-chevron-up');
+			btn.addClass('fa-chevron-down');
+			container.removeClass('tall');
+			location.href = "#spacer1";
+		}
+		txt.toggle();	
+	}
 
 	function plusDivs(n) {
   		showDivs(slideIndex += n);
@@ -385,6 +417,10 @@
 	function stopAnimate(){
 		clearInterval(myAutoPlay);
 	}
+
+	$('.ourstorytext button').click(function(){
+		expandtoggle();
+	});
 
 </script>
 

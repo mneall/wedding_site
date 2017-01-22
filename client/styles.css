@@ -673,7 +673,7 @@ body {
     }
 
     .spacer1 {
-    	height: 4000px;
+    	height: 875px;
     }
 
     .spacer1 #ourstory {
@@ -692,17 +692,19 @@ body {
 		font-size: 2.9em;
 	}
 
-    	.mySlides.slide1 {
-    	background-image: url('/pix/IMG_4722.jpg');
-    	background-position-y: -150px;
-    	min-height: 650px;
-    	width: 100%;
+    .mySlides.slide1 {
+    background-image: url('/pix/IMG_4722.jpg');
+    background-position-y: -150px;
+    min-height: 650px;
+    width: 100%;
+
 	}
 	.mySlides.slide2 {
     	background-image: url('/pix/DSC_9161.jpg');
     	min-height: 650px;
     	width: 100%;	
 	}
+
 	.mySlides.slide3 {
     	background-image: url('/pix/DSC_9368.jpg');
     	background-position-y: -190px;
@@ -710,8 +712,34 @@ body {
     	width: 100%;
 	}
 
+	.mySlides p {
+		padding: 0px;
+	}
+
+	.right {
+		padding: 0px;
+	}
+
     .left {
     	position: initial;
     	width: 100%;
     }
+
+    .moretext {
+    	display: none;
+    }
+
+    .expand {
+    	display: block;
+    }
+
+    .tall {
+    	height: 4170px;
+    }
+
+    .ourstorytext button {
+    	width: 100%;
+    	color: #0E2038;
+    }
+
 }
