@@ -76,7 +76,7 @@
  			</div>
  		</div>
 
-		<div class="w3-content w3-display-container relative">
+		<div class="w3-content w3-display-container relative" id="gallery">
 			<div class="mySlides relative parallax slide1"><p class="bottom">Walking with your hands in mine and mine in yours, that’s exactly where I want to be, always. —Fawn Weaver</p></div>
 			<div class="mySlides relative parallax slide2"><p class="right"><span class="gallery-title">BRIDE<br/></span><span class="name">Erika Elyse Willis</span><br/>When I saw you I fell in love, and you smiled because you knew.<br/>- William Shakespeare</p></div>
 			<div class="mySlides relative parallax slide3"><p class="left"><span class="gallery-title">GROOM<br/></span><span class="name">Corey Antoine Jackson</span><br/>I love you more than any word can say, I love you more than any action I take, I'll be right here loving you until the end.</p></div>
@@ -357,9 +357,6 @@
 		var slideIndex = 1,
 		myAutoPlay,
 		dots;
-	showDivs(slideIndex);
-
-
 
 	function expandtoggle(){
 		var btn = $('.ourstorytext button');
@@ -412,10 +409,13 @@
 		myAutoPlay = setInterval(function(){ plusDivs(1) }, 5000);
 	}
 
-	animate();
-
 	function stopAnimate(){
 		clearInterval(myAutoPlay);
+	}
+
+	if (window.screen.width > 500){
+		animate();
+		showDivs(slideIndex);
 	}
 
 	$('.ourstorytext button').click(function(){

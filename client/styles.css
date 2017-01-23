@@ -688,7 +688,7 @@ body {
 	}
 
 	.spacer1 #ourstory .ourstorytext p {
-		padding-bottom: 10px;
+		padding-bottom: 0px;
 		font-size: 2.9em;
 	}
 
@@ -738,8 +738,38 @@ body {
     }
 
     .ourstorytext button {
+    	display: block;
+    	margin-top: -75px;
     	width: 100%;
     	color: #0E2038;
+    	border: none;
+    	background-color: transparent;
+    }
+
+    .mySlides {
+    	display: block;
+    }
+
+    .mySlides p {
+    	color: rgba(14, 32, 56, 0.5);
+
+    }
+
+    .mySlides.slide1 {
+    	min-height: 750px;
+    }
+
+    .mySlides.slide2 {
+    	margin-top: 250px;
+    }
+
+    .bottom {
+    	margin-top: 600px;
+    	background-color: transparent;
+    }
+
+    #gallery {
+    	min-height: 2000px;
     }
 
 }
