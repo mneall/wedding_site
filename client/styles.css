@@ -754,12 +754,28 @@ body {
 
     .mySlides.slide2 {
     	margin-top: 550px;
+    	min-height: 800px;
+    }
+
+    .mySlides.slide3 {
+    	margin-top: 550px;
+    	min-height: 800px;
     }
 
     .bottom {
     	position: absolute;
     	margin-top: 1100px;
     	background-color: transparent;
+    }
+
+    .right {
+    	position: absolute;
+    	margin-top: 1100px;
+    	background-color: transparent;
+    }
+
+    .gallery-title {
+    	display: none;
     }
 
     .quoteby {
@@ -769,10 +785,8 @@ body {
     }
 
     #gallery {
-    	min-height: 2000px;
+    	min-height: 4000px;
     }
-
-    .right
 
 
 }
