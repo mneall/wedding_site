@@ -651,6 +651,10 @@ body {
  	color: #CCC;
  }
 
+.mobile {
+	display: none;
+}
+
 @media only screen and (max-device-width: 500px) {
 	html, body {
 		font-size: 30px;
@@ -721,7 +725,7 @@ body {
 	.right {
 		padding: 0px;
 		position: absolute;
-		right: initial;
+		left: 0px;
     	margin-top: 1100px;
     	background-color: transparent;
 	}
@@ -757,12 +761,12 @@ body {
     }
 
     .mySlides.slide2 {
-    	margin-top: 550px;
+    	margin-top: 75px;
     	min-height: 800px;
     }
 
     .mySlides.slide3 {
-    	margin-top: 550px;
+    	margin-top: 700px;
     	min-height: 800px;
     }
 
@@ -777,21 +781,62 @@ body {
     }
 
     #erika {
-    	position: absolute;
+    	position: initial;
     	margin-top: -1125px;
     	margin-left: 600px;
     	line-height: 0.95;
     }
 
+    #erikasquote {
+    	position: initial;
+   		margin: 0;
+    	width: 100%;
+    }
+
     .quoteby {
+    	position: initial;
+    	margin: 0;
+    }
+
+    .left {
     	position: absolute;
-    	margin-top: 1520px;
-    	margin-left: 230px;
+    	left: 0;
+    	margin-top: 400px;
     }
 
     #gallery {
     	min-height: 4000px;
     }
 
+    .mobile {
+  		display: initial;
+    }
+
+    .desktop {
+    	display: none;
+    }
+
+    #slide1caption {
+    	text-align: center;
+    	margin-top: -75px;
+    }
+
+    #slide1caption p {
+    	padding: 0px;
+		color: rgba(14, 32, 56, 0.5);
+		text-shadow: -2px 2px 1px #0E2038;
+		font-size: 3em;
+		font-family: "Covered By Your Grace";
+		line-height: 1.1;
+    }
+
+/*    #walkingquote {
+  		padding: 0px;
+		color: rgba(14, 32, 56, 0.5);
+		text-shadow: -2px 2px 1px #0E2038;
+		font-size: 3em;
+		font-family: "Covered By Your Grace";
+		line-height: 1.1;
+    }*/
 
 }
