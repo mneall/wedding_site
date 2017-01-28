@@ -109,14 +109,15 @@ body {
 	}
 
 .spacer1 {
-	height: 740px;
+	height: 775px;
 	width: 100%;
 	background-color: #fff5f0;
 	position: relative;
+	padding-top: 25px;
 } 
 
 	.spacer1 #ourstory {
-		width: 650px;
+		width: 700px;
 		text-align: center;
 		margin: 20px auto 20px auto;
 		padding: 20px;
