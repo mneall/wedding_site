@@ -63,23 +63,23 @@
  				<h2>OUR  &nbsp;STORY</h2>
 	 		
 
- 				<div class="ourstorytext">
- 					
-
+ 				<div class="ourstorytext mobile">
 	 				<p>Corey and Erika met in 2006 during Erika's first week at Michigan State University.</p> 
 
 	 				<p class="moretext">The two quickly developed a strong friendship, affectionately nicknaming each other "Fav," short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out&nbsp;.&nbsp;.&nbsp;.&nbsp;they were meant to be.<br/><br/>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p>
 	 				<button class="fa fa-chevron-down fa-3x" aria-hidden="true"></button>
+	 			</div>
+	 			<div class="ourstorytext desktop">
+	 				<p>Corey and Erika met in 2006 during Erika's first week at Michigan State University.</p> 
 
-
+	 				<p>The two quickly developed a strong friendship, affectionately nicknaming each other "Fav," short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out&nbsp;.&nbsp;.&nbsp;.&nbsp;they were meant to be.<br/><br/>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p>
 	 			</div>
  			</div>
  		</div>
 
 		<div class="w3-content w3-display-container relative" id="gallery">
 			<div class="mySlides relative parallax slide1">
-				<p class="bottom desktop">Walking with your hands in mine and mine in yours, that’s exactly where I want to be, always.</p>
-				<p class="desktop">—Fawn Weaver</p>
+				<p class="bottom desktop">Walking with your hands in mine and mine in yours, that’s exactly where I want to be, always. —Fawn Weaver</p>
 			</div>
 			<div id="slide1caption" class="mobile">
 				<p class="mobile" id="walkingquote">Walking with your hands in mine and mine in yours, that’s exactly where I want to be, always.</p>
@@ -87,8 +87,12 @@
 				<br>
 				<p class="mobile quoteby">—Fawn Weaver</p>
 			</div>
-			<div class="mySlides relative parallax slide2"><p class="right"><span class="gallery-title">BRIDE<br/></span><span class="name" id="erika">Erika Elyse Willis</span><br/><span id="erikasquote">When I saw you I fell in love, and you smiled because you knew.<br/>- William Shakespeare</span></p></div>
-			<div class="mySlides relative parallax slide3"><p class="left"><span class="gallery-title">GROOM<br/></span><span class="name">Corey Antoine Jackson</span><br/>I love you more than any word can say, I love you more than any action I take, I'll be right here loving you until the end.</p></div>
+			<div class="mySlides relative parallax slide2"><p class="right">
+				<span class="gallery-title">BRIDE<br/></span><span class="name" id="erika">Erika Elyse Willis</span><br/><span id="erikasquote">When I saw you I fell in love, and you smiled because you knew.<br/>- William Shakespeare</span></p>
+			</div>
+			<div class="mySlides relative parallax slide3">
+				<p class="left"><span class="gallery-title">GROOM<br/></span><span class="name">Corey Antoine Jackson</span><br/>I love you more than any word can say, I love you more than any action I take, I'll be right here loving you until the end.</p>
+			</div>
 			<div class="w3-display-bottommiddle gallerydots">
 				<span class="w3-badge dot w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
     			<span class="w3-badge dot	w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
@@ -425,8 +429,8 @@
 	if (window.screen.width > 500){
 		animate();
 		showDivs(slideIndex);
-		$('.right').addClass('bottom');
-		$('.right').removeClass('right');
+		// $('.right').addClass('bottom');
+		// $('.right').removeClass('right');
 	}
 
 	$('.ourstorytext button').click(function(){
