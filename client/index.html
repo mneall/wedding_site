@@ -59,22 +59,25 @@
  	<div class="parallax">
  		
  		<div class="spacer1" id="spacer1">
- 			<div id="ourstory">
+ 			<div class="ourstory mobile">
  				<h2>OUR  &nbsp;STORY</h2>
 	 		
 
- 				<div class="ourstorytext mobile">
+ 				<div class="ourstorytext">
 	 				<p>Corey and Erika met in 2006 during Erika's first week at Michigan State University.</p> 
 
 	 				<p class="moretext">The two quickly developed a strong friendship, affectionately nicknaming each other "Fav," short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out&nbsp;.&nbsp;.&nbsp;.&nbsp;they were meant to be.<br/><br/>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p>
 	 				<button class="fa fa-chevron-down fa-3x" aria-hidden="true"></button>
 	 			</div>
+	 		</div>
+	 		<div class="ourstory desktop">
 	 			<div class="ourstorytext desktop">
 	 				<p>Corey and Erika met in 2006 during Erika's first week at Michigan State University.</p> 
 
 	 				<p>The two quickly developed a strong friendship, affectionately nicknaming each other "Fav," short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out&nbsp;.&nbsp;.&nbsp;.&nbsp;they were meant to be.<br/><br/>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p>
 	 			</div>
- 			</div>
+	 		</div>
+ 			
  		</div>
 
 		<div class="w3-content w3-display-container relative" id="gallery">
@@ -419,7 +422,7 @@
 	}
 	function animate(){
 		slideIndex = dots.length;
-		myAutoPlay = setInterval(function(){ plusDivs(1) }, 5000);
+		myAutoPlay = setInterval(function(){ plusDivs(1) }, 6000);
 	}
 
 	function stopAnimate(){
