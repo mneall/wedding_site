@@ -787,7 +787,7 @@ body {
 	#slide3caption {
     	width: 90%;
     	text-align: center;
-		margin: -130px auto 50px auto;
+		margin: -130px auto 0px auto;
 		padding: 25px;
 		border: 10px solid #0E2038;
 		box-shadow: -2px 2px 1px #86848F;
@@ -881,7 +881,8 @@ body {
     }
 
     #gallery-mobile {
-    	min-height: 4655px;
+    	min-height: 4700px;
+    	background-color: #fff5f0;
     }
 
     .mobile {
