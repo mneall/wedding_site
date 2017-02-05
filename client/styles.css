@@ -654,7 +654,7 @@ body {
 	display: none;
 }
 
-@media only screen and (max-device-width: 500px) {
+@media only screen and (max-device-width: 700px) {
 	html, body {
 		font-size: 30px;
 	}
@@ -693,6 +693,10 @@ body {
 		font-size: 2.8em;
 		line-height: 1.1;
 	}
+
+	.mySlides {
+    	display: block;
+    }
 
     .mySlides.slide1 {
     	background-image: url('/pix/IMG_4722.jpg');
@@ -754,11 +758,7 @@ body {
     	background-color: transparent;
     }
 
-    .mySlides {
-    	/*display: block;*/
-    }
-
-    .mySlides.slide2 {
+/*    .mySlides.slide2 {
     	margin-top: 75px;
     	min-height: 800px;
     }
@@ -766,7 +766,7 @@ body {
     .mySlides.slide3 {
     	margin-top: 700px;
     	min-height: 800px;
-    }
+    }*/
 
     .bottom {
     	position: absolute;
@@ -802,7 +802,7 @@ body {
     	margin-top: 400px;
     }
 
-    #gallery {
+    #gallery-mobile {
     	min-height: 4000px;
     }
 
