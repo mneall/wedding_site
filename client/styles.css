@@ -193,7 +193,7 @@ body {
 
 
 	.mySlides.slide1 {
-    	background-image: url('/pix/IMG_4722.jpg');
+    	background-image: url('/pix/IMG_4722_prod.jpg');
     	background-position-y: -150px;
     	min-height: 650px;
 	}
@@ -730,7 +730,7 @@ body {
     }
 
 	.mySlides.slide2 {
-    	background-image: url('/pix/DSC_9161.jpg');
+    	background-image: url('/pix/DSC_9161_mob.jpg');
     	height: 800px;
     	/*width: 100%;	*/
 	}
@@ -768,7 +768,7 @@ body {
     }
 
 	.mySlides.slide3 {
-    	background-image: url('/pix/DSC_9368.jpg');
+    	background-image: url('/pix/DSC_9368_mob.jpg');
     	background-position-y: -190px;
     	background-position-x: -85px;
     	height: 1000px;
