@@ -659,6 +659,14 @@ body {
 		font-size: 30px;
 	}
 
+	.mobile {
+  		display: block;
+    }
+
+    .desktop {
+    	display: none;
+    }
+
 	.top-photo {
     	background-image: url('/pix/IMG_4723_prod2.jpg');
     	min-height: 1500px;
@@ -694,9 +702,41 @@ body {
 		line-height: 1.1;
 	}
 
+	.moretext {
+    	display: none;
+    }
+
+    .expand {
+    	display: block;
+    }
+
+    .tall {
+    	height: 4200px;
+    }
+
+    .ourstorytext button {
+    	display: block;
+    	margin-top: -75px;
+    	width: 100%;
+    	color: #0E2038;
+    	border: none;
+    	background-color: transparent;
+    }
+
+    #gallery-mobile {
+    	min-height: 4700px;
+    	background-color: #fff5f0;
+    }
+
 	.mySlides {
     	display: block;
     }
+
+	.mySlides p {
+		padding: 40px;
+		color: rgba(14, 32, 56, 0.5);
+		font-size: 3em;
+	}
 
     .mySlides.slide1 {
     	background-image: url('/pix/IMG_4722_mob.jpg');
@@ -804,94 +844,88 @@ body {
 		line-height: 1.1;
     }
 
-	.mySlides p {
-		padding: 40px;
-		color: rgba(14, 32, 56, 0.5);
-		font-size: 3em;
-	}
-
-	.right {
-		padding: 0px;
-		position: absolute;
-		left: 0px;
-    	margin-top: 1100px;
-    	background-color: transparent;
-	}
-
-    .left {
-    	position: initial;
-    	width: 100%;
-    }
-
-    .moretext {
-    	display: none;
-    }
-
-    .expand {
-    	display: block;
-    }
-
-    .tall {
-    	height: 4200px;
-    }
-
-    .ourstorytext button {
-    	display: block;
-    	margin-top: -75px;
-    	width: 100%;
-    	color: #0E2038;
-    	border: none;
-    	background-color: transparent;
-    }
-
-/*    .mySlides.slide2 {
-    	margin-top: 75px;
-    	min-height: 800px;
-    }
-
-    .mySlides.slide3 {
-    	margin-top: 700px;
-    	min-height: 800px;
-    }*/
-
-    .bottom {
-    	position: absolute;
-    	margin-top: 1100px;
-    	background-color: transparent;
-    }
-
-    .gallery-title {
-    	display: none;
-    }
-
     .name {
     	font-size: 4em;
     	font-weight: bold;
     }
 
-    .quoteby {
-    	position: initial;
-    	margin: 0;
-    }
+	.spacer2 {
+		height: 2000px;
+		width: 100%;
+		background-color: #fff5f0;
+		position: relative;
+		padding-top: 110px;
+		background-image: url('/pix/DSC_9574.jpg');
+		background-size: 125%;
+		background-repeat: no-repeat;
+		background-position-x: -50px; 
+	}
 
-    .left {
-    	position: absolute;
-    	left: 0;
-    	margin-top: 400px;
-    }
+	#weddingdivtext {
+		padding: 30px 0;
+		margin: 750px auto 100px auto;
+		width: 90%;
+		height: 800px;
+		word-wrap: break-word;
+		text-align: center;
+		border: 10px solid #0E2038;
+		border-radius: 1px;
+		box-shadow: -2px 2px 1px #86848F;
+	}
 
-    #gallery-mobile {
-    	min-height: 4700px;
-    	background-color: #fff5f0;
-    }
+	#weddingdivtext h1 {
+		font-size: 3em;
+	}
 
-    .mobile {
-  		display: block;
-    }
+	#weddingdivtext h4 {
+		font-size: 2.5em;
+	}
 
-    .desktop {
-    	display: none;
-    }
+	.rsvp-box {
+		height: 150px;
+		width: 200px;
+	}
+
+	.rsvp-box h3 {
+		font-size: 3em;
+		text-shadow: -2px 2px 1px #86848F;
+	}
+
+	.event-date-and-location {
+		height: 300px;
+		width: 550px;
+		text-align: center;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.event-date {
+		display: block;
+		float: left;
+		position: relative;
+	}
+
+	.event-location {
+		display: block;
+		float: left;
+		position: relative;
+	}
+
+	.divider {
+		margin: 20px 0;
+		height: 75%;
+		width: 1px;
+		float: left;
+}
+
+	.title-wedding {
+		position: absolute;
+		margin-top: 425px;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(218, 232, 243, 0.5);
+		color: #0E2038;
+}
 
 
 }
