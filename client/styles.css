@@ -928,7 +928,8 @@ body {
 		padding: 10px;
 		margin-top: 50px;
 		margin-bottom: 30px;
-		background-color: rgba(218, 232, 243, 0.6);
+		background-color: rgba(218, 232, 243, 0.3);
+		border-radius: 5px;
 	}
 
 		.rsvp-box h3 {
@@ -943,7 +944,8 @@ body {
 		margin: 15px auto;
 		border: 5px solid #0E2038;
 		box-shadow: -2px 2px 1px #86848F;
-		background-color: rgba(218, 232, 243, 0.6);
+		background-color: rgba(218, 232, 243, 0.3);
+		border-radius: 5px;
 	}
 
 		.reservation-box a {
