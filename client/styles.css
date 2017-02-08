@@ -677,8 +677,14 @@ body {
     }
     .title {
     	bottom: inherit;
-    	top: 600px;
+    	top: 650px;
+    	height: 415px;
     }
+
+   	.titletext {
+		margin-bottom: -50px;
+	}
+
     #subheader h3{
     	font-size: 200%;
     }
@@ -850,7 +856,7 @@ body {
     }
 
 	.spacer2 {
-		height: 2000px;
+		height: 3800px;
 		width: 100%;
 		background-color: #fff5f0;
 		position: relative;
@@ -861,63 +867,6 @@ body {
 		background-position-x: -50px; 
 	}
 
-	#weddingdivtext {
-		padding: 30px 0;
-		margin: 750px auto 100px auto;
-		width: 90%;
-		height: 800px;
-		word-wrap: break-word;
-		text-align: center;
-		border: 10px solid #0E2038;
-		border-radius: 1px;
-		box-shadow: -2px 2px 1px #86848F;
-	}
-
-	#weddingdivtext h1 {
-		font-size: 3em;
-	}
-
-	#weddingdivtext h4 {
-		font-size: 2.5em;
-	}
-
-	.rsvp-box {
-		height: 150px;
-		width: 200px;
-	}
-
-	.rsvp-box h3 {
-		font-size: 3em;
-		text-shadow: -2px 2px 1px #86848F;
-	}
-
-	.event-date-and-location {
-		height: 300px;
-		width: 550px;
-		text-align: center;
-		display: block;
-		margin: 0 auto;
-	}
-
-	.event-date {
-		display: block;
-		float: left;
-		position: relative;
-	}
-
-	.event-location {
-		display: block;
-		float: left;
-		position: relative;
-	}
-
-	.divider {
-		margin: 20px 0;
-		height: 75%;
-		width: 1px;
-		float: left;
-}
-
 	.title-wedding {
 		position: absolute;
 		margin-top: 425px;
@@ -925,7 +874,89 @@ body {
 		text-align: center;
 		background-color: rgba(218, 232, 243, 0.5);
 		color: #0E2038;
-}
+	}
+
+		.title-wedding h1 {
+			margin-bottom: -15px;
+		}
+
+	#weddingdetails {
+		padding: 30px 0;
+		margin: 750px auto 100px auto;
+		width: 90%;
+		height: 2750px;
+		word-wrap: break-word;
+		text-align: center;
+		border: 10px solid #0E2038;
+		border-radius: 1px;
+		box-shadow: -2px 2px 1px #86848F;
+	}
+
+		#weddingdetails h1 {
+			font-family: "Sue Ellen Francisco";
+			text-shadow: -2px 2px 1px #86848F;
+			color: #0E2038;
+			font-size: 3em;
+		}
+
+		#weddingdetails h4 {
+			font-family: "Sue Ellen Francisco";
+			font-size: 2em;
+			color: #0E2038;
+			font-size: 2.5em;
+		}
+
+	.box1 {
+		width: 90%;
+		min-height: 100px;
+		/*border: 5px solid blue;*/
+		margin: 0 auto 50px auto;
+		text-align: center;
+	}
+
+	.divider {
+		border: 2px solid #0E2038;
+		height: 1px;
+		width: 100px;
+		margin: 25px auto;
+		float: none;
+	}
+
+	.rsvp-box {
+		height: 150px;
+		width: 200px;
+		padding: 10px;
+		margin-top: 100px;
+		margin-bottom: 30px;
+	}
+
+		.rsvp-box h3 {
+			font-size: 3em;
+			text-shadow: -2px 2px 1px #86848F;
+		}
+
+	.reservation-box {
+		height: 150px;
+		width: 400px;
+		text-align: center;
+		margin: 15px auto;
+		border: 5px solid #0E2038;
+		box-shadow: -2px 2px 1px #86848F;
+	}
+
+		.reservation-box a {
+			text-decoration: none;
+		}
+
+		.reservation-box h3 {
+			margin: 20px auto;
+			vertical-align: middle;
+			padding: 0;
+			font-family: "Sue Ellen Francisco";
+			font-size: 2.5em;
+			color: #0E2038;
+		}
+
 
 
 }
