@@ -928,7 +928,8 @@ body {
 		padding: 10px;
 		margin-top: 50px;
 		margin-bottom: 30px;
-		background-color: rgba(218, 232, 243, 0.25);
+		background-color: rgba(218, 232, 243, 0.5);
+		box-shadow: -2px 2px 1px #86848F;
 		border-radius: 5px;
 	}
 
@@ -944,7 +945,7 @@ body {
 		margin: 15px auto;
 		border: 5px solid #0E2038;
 		box-shadow: -2px 2px 1px #86848F;
-		background-color: rgba(218, 232, 243, 0.25);
+		background-color: rgba(218, 232, 243, 0.5);
 		border-radius: 5px;
 	}
 
@@ -962,6 +963,83 @@ body {
 			text-shadow: -2px 2px 1px #86848F;
 		}
 
+	#party-gallery {
+		height: 2000px;
+	}
+
+		.swiper-container {
+	        width: 90%;
+	        height: 800px;
+	        margin: 0 auto;
+	        background: transparent;
+	    }
+
+	    	.swiper-container img {
+	    		margin: 50px auto 25px auto;
+	    		height: 75%;
+	    		display: block;
+	    	}
+
+
+
+    .swiper-slide {
+        background-size: cover;
+        background-position: center;
+        background: transparent;
+        text-align: center;
+    }
+
+    	.swiper-slide h4 {
+    		display: block;
+    		font-size: 1em;
+    	}
+
+    .swiper-slide-active {
+  		background: transparent;
+	}
+
+	.swiper-slide span {
+  		text-align:center;
+  		display:block;
+  		margin: 20px;
+  		font-size:21px;
+	}
+
+	.swiper-pagination-bullet {
+  		width: 25px;
+  		height: 25px;
+  		background: none;
+  		border:2px solid #aaa;
+  		/*border-radius: 1.5;*/
+  		opacity:1;
+  		cursor: pointer;
+	}
+
+	.swiper-pagination-bullet-active {
+  		background: #007aff;
+  		border-color: #007aff;
+	} 
+
+    .gallery-top {
+        height: 80%;
+        width: 100%;
+    }
+
+    .gallery-thumbs {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
+
+    .gallery-thumbs .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+    }
+
+    .gallery-thumbs .swiper-slide-active {
+        opacity: 1;
+    }
 
 
 }

@@ -3,6 +3,7 @@ var express = require('express'),
 	path = require('path');
 
 app.use(express.static(path.join(__dirname, 'client')));
+app.use(express.static(path.join(__dirname, 'node_modules')));
 app.set('views', __dirname + '/client/views');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
