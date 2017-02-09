@@ -964,7 +964,7 @@ body {
 		}
 
 	#party-gallery {
-		height: 2000px;
+		height: 2500px;
 	}
 
 		#party-gallery h1 {
@@ -982,8 +982,8 @@ body {
 		}
 
 		.swiper-container {
-	        width: 90%;
-	        height: 800px;
+	        width: 95%;
+	        height: 700px;
 	        margin: 0 auto;
 	        background: transparent;
 	    }
