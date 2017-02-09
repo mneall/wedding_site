@@ -975,7 +975,7 @@ body {
 		}
 
 		#party-gallery h3 {
-			font-size: 3em;
+			font-size: 2em;
 			color: #0E2038;
 			font-family: "Sue Ellen Francisco";
 			text-shadow: -2px 2px 1px #86848F;
@@ -983,13 +983,12 @@ body {
 
 		.swiper-container {
 	        width: 95%;
-	        height: 700px;
-	        margin: 0 auto;
+	        height: 28%;
 	        background: transparent;
 	    }
 
 	    	.swiper-container img {
-	    		margin: 50px auto 25px auto;
+	    		margin: 15px auto 15px auto;
 	    		height: 75%;
 	    		display: block;
 	    	}
@@ -1003,11 +1002,6 @@ body {
         text-align: center;
     }
 
-    	.swiper-slide h4 {
-    		display: block;
-    		font-size: 1em;
-    	}
-
     .swiper-slide-active {
   		background: transparent;
 	}
@@ -1018,21 +1012,32 @@ body {
   		margin: 20px;
   		font-size:21px;
 	}
-
-	.swiper-pagination-bullet {
-  		width: 25px;
-  		height: 25px;
-  		background: none;
-  		border:2px solid #aaa;
-  		/*border-radius: 1.5;*/
-  		opacity:1;
-  		cursor: pointer;
+	.swiper-container-horizontal .swiper-scrollbar {
+		margin-top: 5px;
+		height: 20px;
 	}
 
-	.swiper-pagination-bullet-active {
-  		background: #007aff;
-  		border-color: #007aff;
-	} 
+	.swiper-container-3d .swiper-slide-shadow-left {
+		background-image: none;
+	}
+
+	.swiper-container-3d .swiper-slide-shadow-right {
+		background-image: none;
+	}
+
+	.swiper-button-prev {
+		background-image: none;
+		margin-top: -100px;
+		left: 0;
+		opacity: 0.5;
+	}
+
+	.swiper-button-next {
+		background-image: none;
+		margin-top: -100px;
+		right: 35px;
+		opacity: 0.5;
+	}
 
     .gallery-top {
         height: 80%;
