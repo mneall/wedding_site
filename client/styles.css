@@ -856,7 +856,7 @@ body {
     }
 
 	.spacer2 {
-		height: 3800px;
+		height: 3700px;
 		width: 100%;
 		background-color: #fff5f0;
 		position: relative;
@@ -966,6 +966,20 @@ body {
 	#party-gallery {
 		height: 2000px;
 	}
+
+		#party-gallery h1 {
+			font-size: 3em;
+			color: #0E2038;
+			font-family: "Sue Ellen Francisco";
+			text-shadow: -2px 2px 1px #86848F;
+		}
+
+		#party-gallery h3 {
+			font-size: 3em;
+			color: #0E2038;
+			font-family: "Sue Ellen Francisco";
+			text-shadow: -2px 2px 1px #86848F;
+		}
 
 		.swiper-container {
 	        width: 90%;
