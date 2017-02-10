@@ -20,6 +20,8 @@
 	
 	<div id="wrapper">
 
+
+
 	<div id="navbar" class="desktop">
 		<ul class="links">
 			<li><a href="#home">HOME</a></li>
@@ -62,6 +64,9 @@
 	 			</div>
 	 		</div>
 	 		<div class="ourstory desktop">
+
+	 			<h2>OUR  &nbsp;STORY</h2>
+
 	 			<div class="ourstorytext desktop">
 	 				<p>Corey and Erika met in 2006 during Erika's first week at Michigan State University.</p> 
 
@@ -692,13 +697,22 @@
             	modifier: 1,
             	slideShadows : false
         	}	
-    	});        
+    	});   
+     
   	});
 
 </script>
 
+<script>
+
+	$(document).ready(function() {
+   		$('.menu-link').bigSlide();
+	});
+
+</script>
 
 
+<script src="bigslide/dist/bigSlide.min.js"></script>
 <script src="swiper/dist/js/swiper.min.js"></script>
 
 </body>
