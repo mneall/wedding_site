@@ -57,14 +57,11 @@ body {
 		font-size: 1.8em;
 		color: #86848F;
 		font-family: "Sue Ellen Francisco";
-		/*text-shadow: -1px 1px 1px #0E2038;*/
 	}
 
 #wrapper {
 	width: 100%;
 	min-height: 600px;
-	/*padding-top: 100px;*/
-	/*background-position-y: 100px;*/
 }
 
 .title {
@@ -89,8 +86,6 @@ body {
 		font-size: 3.0em;
 		color: #0E2038;
 		text-shadow: -2px 2px 1px #86848F;
-		/*position: absolute;*/
-		/*left: 0;*/
 	}
 
 	.ourstory p {
@@ -140,9 +135,6 @@ body {
 	margin: 0 auto;
 	height: 500px;
 	width: 100%;
-	/*background-image: url('/pix/DSC_9383.jpg');*/
-	/*background-size: 100%;*/
-	/*background-repeat: no-repeat;*/
 	box-shadow: 2px 2px 10px #ccc;
 }
 
@@ -155,10 +147,6 @@ body {
 		font-size: 3.0em;
 		font-family: "Cedarville Cursive";
 	}
-
-	/*canvas {
-		margin: auto auto 50px;	
-	}*/
 
 	.w3-content {
 		max-width: 100%;
@@ -189,8 +177,6 @@ body {
 			color: #FFF5F0;
 			text-shadow: -2px 2px 1px #86848F;
 		}
-
-
 
 	.mySlides.slide1 {
     	background-image: url('/pix/IMG_4722_prod.jpg');
@@ -226,12 +212,6 @@ body {
 	}
 
 
-
-
-/*	.mySlides img {
-		width: 100%;
-	}
-*/
 	.bottom {
 		position: absolute;
 		width: 100%;
@@ -983,14 +963,14 @@ body {
 			text-shadow: -2px 2px 1px #86848F;
 		}
 
-		.swiper-container {
+		#party-gallery .swiper-container {
 	        width: 100%;
 	        height: 35%;
 	        background: transparent;
 	        margin-bottom: 75px;
 	    }
 
-	    	.swiper-container img {
+	    	#party-gallery .swiper-container img {
 	    		margin: 15px auto 15px auto;
 	    		height: 75%;
 	    		display: block;
@@ -999,18 +979,18 @@ body {
 
 
 
-    .swiper-slide {
+    #party-gallery .swiper-container .swiper-slide {
         background-size: cover;
         background-position: center;
         background: transparent;
         text-align: center;
     }
 
-    .swiper-slide-active {
+    #party-gallery .swiper-container .swiper-slide-active {
   		background: transparent;
 	}
 
-	.swiper-slide span {
+	#party-gallery .swiper-container .swiper-slide span {
   		text-align:center;
   		display:block;
   		margin: 20px;
@@ -1065,7 +1045,7 @@ body {
     }
 
     .spacer4 {
-		height: 1450px;
+		height: 1600px;
 		width: 100%;
 		background-color: #FFF5F0;
 		position: relative;
@@ -1107,9 +1087,24 @@ body {
 			justify-content: space-around;
 		}
 
-		#registry-container img {
-			
+	#mobile-footer {
+		width: 100%;
+		height: 210px;
+		margin-top: 5%;
+		z-index: 9999;
+		background-color: #DAE8F3;
+		border-top: solid 0.5px rgba(200, 214, 225, 1);
+		/*box-shadow: 0px 10px 25px 0px #333; */
+	}
+
+		#mobile-footer h4 {
+			font-family: "Sue Ellen Francisco";
+			font-size: 1.75em;
+			color: #0E2038;
 		}
+
+
+
 
 
 

@@ -19,17 +19,6 @@
 <!-- kristi -->
 	
 	<div id="wrapper">
-<!-- 
-<div id="sidebar">
-			<ul class="links">
-			<li><a href="#">HOME <span class="w3-badge dot w3-border w3-transparent w3-hover-white w3-black" onclick=""></span></a></li>
-			<li><a href="#">OUR STORY <span class="w3-badge dot w3-border w3-transparent w3-hover-white w3-black" onclick=""></span></a></li>
-			<li><a href="#">THE WEDDING <span class="w3-badge dot w3-border w3-transparent w3-hover-white w3-black" onclick=""></span></a></li>
-			<li><a href="/weddingparty">THE WEDDING PARTY<span class="w3-badge dot w3-border w3-transparent w3-hover-white w3-black" onclick=""></span></a></li>
-			<! <li><a href="#">Registry</a></li> -->
-	<!-- 		<li><a href="#">RSVP <span class="w3-badge dot w3-border w3-transparent w3-hover-white w3-black" onclick=""></span></a></li>
-		</ul>
-	</div> -->
 
 	<div id="navbar" class="desktop">
 		<ul class="links">
@@ -434,7 +423,7 @@
 			<h1>BRIDESMAIDS</h1>
 
 			<!-- Slider main container -->
-			<div class="swiper-container">
+			<div class="swiper-container party-container">
     			<!-- Additional required wrapper -->
     			<div class="swiper-wrapper">
         			<!-- Slides -->
@@ -504,7 +493,7 @@
 			<h1>GROOMSMEN</h1>
 
 			<!-- Slider main container -->
-			<div class="swiper-container">
+			<div class="swiper-container party-container">
 
 	    		<!-- Additional required wrapper -->
 	    		<div class="swiper-wrapper">
@@ -583,6 +572,11 @@
 				</div>
 			
 
+			</div>
+
+			<div id="mobile-footer">
+				<h4>Photography by Ronald Tillman</h3>
+				<h4>Website by Matt Neall</h3>
 			</div>
 
 
@@ -682,7 +676,7 @@
 
 	$(document).ready(function () {
     	//initialize swiper when document ready  
-    	var mySwiper = new Swiper ('.swiper-container', {
+    	var mySwiper = new Swiper ('.party-container', {
       		effect: 'coverflow',
         	slidesPerView: 1.5,
         	centeredSlides: true,
