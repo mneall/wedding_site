@@ -1135,6 +1135,10 @@ body {
 				background-color: transparent;
 			}
 
+			#logo-container img {
+				width: 250px;
+			}
+
 	#mobile-footer {
 		width: 100%;
 		height: 210px;
