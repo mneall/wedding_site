@@ -104,7 +104,7 @@ body {
 	}
 
 .spacer1 {
-	height: 775px;
+	min-height: 600px;
 	width: 100%;
 	background-color: #fff5f0;
 	position: relative;
@@ -115,7 +115,7 @@ body {
 		min-height: 530px;
 		width: 50%;
 		text-align: center;
-		margin: 20px auto 20px auto;
+		margin: 20px auto 0px auto;
 		padding: 0px 25px;
 		border: 10px solid #0E2038;
 		box-shadow: -2px 2px 1px #86848F;
@@ -148,6 +148,55 @@ body {
 		font-size: 3.0em;
 		font-family: "Cedarville Cursive";
 	}
+
+	.spacer2 {
+		height: 650px;
+		width: 100%;
+		background-color: #fff5f0;
+		position: relative;
+		padding-top: 110px;
+	}
+
+		#main-gallery-desktop {
+			width: 100%;
+			height: 500px;
+		}
+
+			#main-gallery-desktop .swiper-wrapper {
+				width: 100%;
+				height: 100%;
+			}
+
+				#main-gallery-desktop .swiper-wrapper .swiper-slide {
+					width: 100%;
+					height: 100%;
+				}
+
+				#slide1 {
+					background-image: url(/pix/IMG_4722_prod.jpg);
+					background-size: 100%;
+					background-repeat: no-repeat;
+					background-position-y: -250px;
+
+				}
+
+				#slide2 {
+					background-image: url(/pix/DSC_9161.jpg);
+					background-size: 100%;
+					background-repeat: no-repeat;
+
+				}
+
+				#slide3 {
+					background-image: url(/pix/DSC_9368.jpg);
+					background-size: 100%;
+					background-repeat: no-repeat;
+					background-position-y: -200px;
+				}
+
+				#main-gallery-desktop .swiper-wrapper .swiper-slide img {
+					width: 100%;
+				}
 
 	.w3-content {
 		max-width: 100%;
@@ -392,13 +441,7 @@ body {
 			margin-top: 25px;
 		}
 
-.spacer2 {
-	height: 650px;
-	width: 100%;
-	background-color: #fff5f0;
-	position: relative;
-	padding-top: 110px;
-}
+
 
 .ringphoto {
 	position: relative;
@@ -1104,6 +1147,13 @@ body {
 			color: #0E2038;
 		}
 
+	#simple-menu {
+		width: 100px;
+		height: 100px;
+		position: fixed;
+		top: 0;
+		z-index: 9999;
+	}
 
 
 

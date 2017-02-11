@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="driveway.min.css">
 	<link rel="stylesheet" type="text/css" href="swiper/dist/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="sidr/dist/stylesheets/jquery.sidr.light.min.css">
 	<script src="https://use.fontawesome.com/4b9f7dd5c8.js"></script>
 	<script src="app.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
@@ -76,7 +77,44 @@
  			
  		</div>
 
-		<div class="w3-content w3-display-container relative desktop" id="gallery">
+ 		<div class="spacer2 desktop">
+ 			
+ 			<div class="swiper-container" id="main-gallery-desktop">
+    			<!-- Additional required wrapper -->
+    			<div class="swiper-wrapper">
+        			<!-- Slides -->
+        			<div class="swiper-slide" id="slide1">
+        				
+        				<!-- <h3>Brittany Roberts - Matron of Honor</h3> -->
+        			</div>
+
+        			<div class="swiper-slide" id="slide2">
+        				
+        				<!-- <h3>Ottumn Kennedy - Maid of Honor</h3> -->
+        			</div>
+
+	        		<div class="swiper-slide" id="slide3">
+	        			
+	        			<!-- <h3>Traci Simmons - Bridesmaid</h3> -->
+	        		</div>
+        		
+				</div>
+
+    			<!-- If we need pagination -->
+    			<div class="swiper-pagination"></div>
+    
+    			<!-- If we need navigation buttons -->
+    			<div class="swiper-button-prev"><span class="fa fa-chevron-left fa-3x" aria-hidden="true"></span></div>
+    			<div class="swiper-button-next"><span class="fa fa-chevron-right fa-3x" aria-hidden="true"></span></div>
+    
+    			<!-- If we need scrollbar -->
+    			<!-- <div class="swiper-scrollbar"></div> -->
+    			
+			</div>
+
+ 		</div>
+
+		<!-- <div class="w3-content w3-display-container relative desktop" id="gallery">
 			<div class="mySlides relative parallax slide1">
 				<p class="bottom desktop">Walking with your hands in mine and mine in yours, that’s exactly where I want to be, always. —Fawn Weaver</p>
 			</div>
@@ -92,7 +130,7 @@
     			<span class="w3-badge dot	w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
     			<span class="w3-badge dot	w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
     		</div>
-		</div>
+		</div> -->
 
 		<div class="w3-content w3-display-container relative mobile" id="gallery-mobile">
 			<div class="mySlides relative parallax slide1"></div>
@@ -214,40 +252,9 @@
 
 				<h4>Adults Only</h4>
 				
-				<!-- <div class="event-date-and-location">
-					<div class="event-date small-box">
-						<div class="event-title">
-							<h4>When</h4>
-						</div>
-						<div class="event-text">
-							<h4>Friday, August 18, 2017 5:30 PM - 10:30 PM</h4>
-						</div>
-					</div>
-					<div class="divider"></div>
-					<div class="event-location small-box">
-						<div class="event-title">
-							<h4 >Where</h4>
-						</div>
-						<div class="event-text">
-							<h4>Detroit, Michigan</h4>
-						</div>	
-					</div>
-				</div>
-				<div class="rsvp-box">
-					<a href="/rsvp"><h3>RSVP</h3></a>
-				</div>
-				<h4 id="formal-invitation">Formal Invitation to Follow</h4> -->
 			</div>
 		</div>
 
-<!-- 	<div id="carouselbox" class="active">
-		
-		<ul id="ourstorylist">
-			<li id="ourstory1"><h2>Our Story</h2><p>Corey and Erika met in 2006 during Erika's first week at Michigan State University. The two quickly developed a strong friendship, affectionately nicknaming each other "Fav", short for Favorite. As their friendship flourished those closest to them began to notice what Corey and Erika would soon find out...They were meant to be.</p><p>On March 14, 2009 the two officially began dating, an adventure that would lead them from East Lansing, Michigan to Orlando, Florida as Erika went on to law school. The two returned to their home in Detroit, Michigan in September 2013. Corey asked Erika to marry him on May 30, 2016 at an intimate dinner with friends in Saint Clair, Michigan. Shortly afterward the two decided to start off their new chapter in Los Angeles, California, where they currently reside.</p></li>
-			<li id="ourstory2">When I saw you I fell in love, and you smiled because you knew. - William Shakespeare<span>Bride: Erika Elyse Willis</span></li>
-			<li id="ourstory3">I love you more than any word can say, I love you more than any action I take, I'll be right here loving you until the end.</li>
-		</ul>
-	</div> -->
 	<div class="ringphoto desktop">
 	<!-- 	<div class="ringphotofilter">hello</div> -->
 		<div class="ringphototext">
@@ -697,22 +704,23 @@
             	modifier: 1,
             	slideShadows : false
         	}	
+    	});
+
+    	var mainGallery = new Swiper ('#main-gallery-desktop', {
+    		    pagination: '.swiper-pagination',
+        		nextButton: '.swiper-button-next',
+        		prevButton: '.swiper-button-prev',
+        		paginationClickable: true,
+        		spaceBetween: 30,
+        		centeredSlides: true,
+        		autoplay: 0,
+        		autoplayDisableOnInteraction: true
     	});   
      
   	});
 
 </script>
 
-<script>
-
-	$(document).ready(function() {
-   		$('.menu-link').bigSlide();
-	});
-
-</script>
-
-
-<script src="bigslide/dist/bigSlide.min.js"></script>
 <script src="swiper/dist/js/swiper.min.js"></script>
 
 </body>
