@@ -7,7 +7,6 @@
 	<link rel="stylesheet" type="text/css" href="driveway.min.css">
 	<link rel="stylesheet" type="text/css" href="swiper/dist/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<link rel="stylesheet" type="text/css" href="sidr/dist/stylesheets/jquery.sidr.light.min.css">
 	<script src="https://use.fontawesome.com/4b9f7dd5c8.js"></script>
 	<script src="app.js"></script>
 	<script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
@@ -15,18 +14,35 @@
 </head>
 <body>
 
+
 <!-- Euphoria Script -->
 <!-- bilbo swash caps -->
 <!-- kristi -->
+
+	<button class="toggle-button button-left mobile">
+		<i class="fa fa-bars" aria-hidden="true"></i>
+	</button>
+
+
 	
-	<nav id="menu">
-  		<header>
-    		<h2>Menu</h2>
-  		</header>
+	<nav id="menu" class="slideout-menu slideout-menu-left mobile">
+		<header>
+			<ul>
+				<li><a class="menu-link" href="#home">Home</a></li>
+				<li><a class="menu-link" href="#spacer1">Our Story</a></li>
+				<li><a class="menu-link" href="#spacer2">The Wedding</a></li>
+				<li><a class="menu-link" href="#rsvp-mob">RSVP</a></li>
+				<li><a class="menu-link" href="#party-gallery">The Wedding Party</a></li>
+				<li><a class="menu-link" href="#spacer4">Registry</a></li>
+			</ul>
+		</header>
 	</nav>
 
 
-	<div id="wrapper">
+	<div id="wrapper" class="slideout-panel slideout-panel-left">
+	
+
+
 
 
 
@@ -206,7 +222,7 @@
 						</div>	
 					</div>
 				</div>
-				<div class="rsvp-box">
+				<div class="rsvp-box" id="rsvp">
 					<a href="/rsvp"><h3>RSVP</h3></a>
 				</div>
 				<h4 id="formal-invitation">Formal Invitation to Follow</h4>
@@ -235,7 +251,7 @@
 
 				<div class="divider"></div>
 
-				<div class="rsvp-box">
+				<div class="rsvp-box" id="rsvp-mob">
 					<a href="/rsvp"><h3>RSVP</h3></a>
 				</div>
 
@@ -579,7 +595,7 @@
 
 		</div>
 
-		<div class="spacer4 mobile">
+		<div class="spacer4 mobile" id="spacer4">
 
 			<div id="registry-container">
 				<h1>Registry</h1>
@@ -594,8 +610,8 @@
 			</div>
 
 			<div id="mobile-footer">
-				<h4>Photography by Ronald Tillman</h3>
-				<h4>Website by Matt Neall</h3>
+				<h4>Photography by Ronald Tillman</h4>
+				<h4>Website by Matt Neall</h4>
 			</div>
 
 
@@ -619,10 +635,6 @@
 <script type="text/javascript">
 
 
-		var slideIndex = 1,
-		myAutoPlay,
-		dots;
-
 	function expandtoggle(){
 		var btn = $('.ourstorytext button');
 		var txt = $('.ourstorytext .moretext');
@@ -641,55 +653,15 @@
 		txt.toggle();	
 	}
 
-	function plusDivs(n) {
-  		showDivs(slideIndex += n);
-	}
-
-	function currentDiv(n){
-		stopAnimate();
-		showDivs(slideIndex = n);
-
-	}
-
-	function showDivs(n) {
-	  	var i;
-	  	var x = document.getElementsByClassName("mySlides");
-	  	var dotCollection = document.getElementsByClassName("dot");
-	  	var elements = Array.prototype.slice.call(x);
-	  	dots = Array.prototype.slice.call(dotCollection);
-
-	  	elements.forEach(function(element){
-	  		element.classList.remove('show');
-	  	});
-	  	dots.forEach(function(dot){
-	  		dot.classList.remove('w3-white');
-	  	});
-	  	if (n > x.length) {slideIndex = 1}
-	  	if (n < 1) {slideIndex = x.length}
-	  	x[slideIndex-1].classList.add('show');
-	  	dots[slideIndex-1].classList.add('w3-white');
-	}
-	function animate(){
-		slideIndex = dots.length;
-		myAutoPlay = setInterval(function(){ plusDivs(1) }, 6000);
-	}
-
-	function stopAnimate(){
-		clearInterval(myAutoPlay);
-	}
-
-	if (window.screen.width > 500){
-		animate();
-		showDivs(slideIndex);
-		// $('.right').addClass('bottom');
-		// $('.right').removeClass('right');
-	}
-
 	$('.ourstorytext button').click(function(){
 		expandtoggle();
 	});
 
 </script>
+
+<script src="swiper/dist/js/swiper.min.js"></script>
+<script src="slideout/dist/slideout.min.js"></script>
+
 
 <script type="text/javascript">
 
@@ -722,23 +694,59 @@
         		centeredSlides: true,
         		autoplay: 0,
         		autoplayDisableOnInteraction: true
-    	});   
+    	});
+
+    	var slideout = new Slideout({
+			'panel': document.getElementById('wrapper'),
+			'menu': document.getElementById('menu'),
+			'padding': 500,
+			'tolerance': 70,
+			'easing': 'cubic-bezier(.32,2,.55,.27)'
+		});
+
+		slideout.disableTouch();
+
+		$('.toggle-button').on('click', function() {
+        		slideout.toggle();
+  				$(".toggle-button").toggleClass("button-right");
+  				$(".toggle-button").toggleClass("button-left");
+
+      		});
+
+		$(".menu-link").on('click', function(){
+			slideout.close();
+			$(".toggle-button").toggleClass("button-right");
+  			$(".toggle-button").toggleClass("button-left");
+		});
 
 
-  		var slideout = new Slideout({
-    		'panel': document.getElementById('panel'),
-    		'menu': document.getElementById('menu'),
-    		'padding': 256,
-    		'tolerance': 70
-  		});
 
-     
+
+		// slideout.once('open', function(){
+		// 	$(".toggle-button").toggleClass("button-right");
+		// 	$(".toggle-button").toggleClass("button-left");
+
+		// });
+
+		// slideout.once('close', function(){
+		// 	$(".toggle-button").toggleClass("button-left");
+		// 	$(".toggle-button").toggleClass("button-right");
+		// });
+
+		// $(".menu-link").on("click",
+		// 	function(){
+		// 		slideout.toggle();
+		// 	});
+
+
+
+
+
   	});
 
 </script>
 
-<script src="swiper/dist/js/swiper.min.js"></script>
-<script src="slideout/dist/slideout.min.js"></script>
+
 
 
 </body>

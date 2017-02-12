@@ -1164,7 +1164,7 @@ body {
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 256px;
+  width: 500px;
   min-height: 100vh;
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
@@ -1174,6 +1174,7 @@ body {
 
 .slideout-menu-left {
   left: 0;
+background-color: #DAE8F3;
 }
 
 .slideout-menu-right {
@@ -1197,5 +1198,43 @@ body {
 .slideout-open .slideout-menu {
   display: block;
 }
+
+.toggle-button {
+    font-size: 4em;
+    position: fixed;
+	top: -1%;
+	z-index: 999;
+	opacity: 0.5;
+}
+
+.button-left {
+	left: 3%;
+	transition-duration: 0.25s;
+}
+
+.button-right {
+	left: 37%;
+	transition-duration: 0.25s;
+}
+
+	nav ul {
+ 		margin-top: 10%;
+ 		font-family: "Sue Ellen Francisco";
+ 		font-size: 2.8em;
+ 		color: #0E2038;
+ 		text-decoration: none;
+	}
+
+		nav ul li {
+			margin-top: 15%;
+		}
+
+			nav ul li a {
+				text-decoration: none;
+			}
+
+
+
+
 
 }
