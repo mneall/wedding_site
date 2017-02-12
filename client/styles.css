@@ -6,6 +6,7 @@ body {
 	background-position: center;*/
 }
 
+
 .top-photo {
     background-image: url('/pix/DSC_9383_prod.jpg');
     background-position-y: 100px;
@@ -752,8 +753,7 @@ body {
     	color: #0E2038;
     	border: none;
     	background-color: transparent;
-    	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
-		-webkit-tap-highlight-color: transparent;  // i.e. Nexus5/Chrome and Kindle Fire HD 7''
+    	outline: none;
     }
 
     #gallery-mobile {
@@ -1202,26 +1202,18 @@ background-color: #DAE8F3;
 }
 
 .toggle-button {
-    font-size: 5em;
+	outline: none;
+    font-size: 4.5em;
     position: fixed;
+    right: 3%;
 	top: -1%;
 	z-index: 999;
 	background-color: transparent;
-	color: #cecfd8;
+	color: #3e3e3e;
 	border: none;
-	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
-	-webkit-tap-highlight-color: transparent;
 }
 
-.button-left {
-	left: 3%;
-	transition-duration: 0.25s;
-}
 
-.button-right {
-	left: 37%;
-	transition-duration: 0.25s;
-}
 
 	nav ul {
  		margin-top: 10%;
