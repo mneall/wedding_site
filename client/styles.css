@@ -156,13 +156,15 @@ body {
 		width: 100%;
 		background-color: #fff5f0;
 		position: relative;
-		padding-top: 110px;
+		margin-top: 50px;
 	}
 
 		#main-gallery-desktop {
 			width: 100%;
-			height: 500px;
+			height: 600px;
+			font-family: "Sue Ellen Francisco";
 		}
+
 
 			#main-gallery-desktop .swiper-wrapper {
 				width: 100%;
@@ -170,15 +172,18 @@ body {
 			}
 
 				#main-gallery-desktop .swiper-wrapper .swiper-slide {
-					width: 100%;
 					height: 100%;
+				}
+
+				#main-gallery-desktop p {
+					font-size: 2em;
 				}
 
 				#slide1 {
 					background-image: url(/pix/IMG_4722_prod.jpg);
 					background-size: 100%;
 					background-repeat: no-repeat;
-					background-position-y: -250px;
+					background-position-y: 95%;
 
 				}
 
@@ -186,6 +191,7 @@ body {
 					background-image: url(/pix/DSC_9161.jpg);
 					background-size: 100%;
 					background-repeat: no-repeat;
+					background-position-y: 7%;
 
 				}
 
@@ -193,12 +199,37 @@ body {
 					background-image: url(/pix/DSC_9368.jpg);
 					background-size: 100%;
 					background-repeat: no-repeat;
-					background-position-y: -200px;
+					background-position-y: 66%;
 				}
 
 				#main-gallery-desktop .swiper-wrapper .swiper-slide img {
 					width: 100%;
 				}
+
+			.swiper-button {
+				background-color: rgba(125, 125, 125, 0.5);
+				height: 54px;
+				width: 54px;
+				border-radius: 30px;
+				background-image: none;
+			}
+
+			.swiper-button-prev {
+				left: 2%;
+				margin-top: -2%;
+				padding: 7px;
+			}
+
+			.swiper-button-next {
+				right: 2%;
+				margin-top: -2%;
+				padding: 5px;
+			}
+
+				.swiper-button-next span {
+					margin: 1px 0px 0px 10px;
+				}
+
 
 	.w3-content {
 		max-width: 100%;
@@ -266,11 +297,9 @@ body {
 
 	.bottom {
 		position: absolute;
+		bottom: 0;
 		width: 100%;
 		color: white;
-		margin-top: 540px;
-		padding: 5px 50px;
-		font-size: 1.1em;
 		text-align: center;
 		background-color: rgba(14, 32, 56, 0.5);
 	}
@@ -704,7 +733,7 @@ body {
     .title {
     	bottom: inherit;
     	top: 650px;
-    	height: 415px;
+    	height: 450px;
     }
 
    	.titletext {
@@ -712,7 +741,7 @@ body {
 	}
 
     #subheader h3{
-    	font-size: 200%;
+    	font-size: 2.7em;
     }
 
     .spacer1 {
