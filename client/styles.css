@@ -152,7 +152,7 @@ body {
 	}
 
 	.spacer2 {
-		height: 1000px;
+		height: 800px;
 		width: 100%;
 		background-color: #fff5f0;
 		position: relative;
@@ -415,7 +415,7 @@ body {
 	#when-where {
 		width: 90%;
 		/*border: 5px solid orange;*/
-		margin: 0 auto;
+		margin: 25px auto 0px auto;
 		display: flex;
 		justify-content: space-around;
 		height: 200px;
@@ -432,7 +432,7 @@ body {
 
 	.box2 {
 		width: 90%;
-		height: 150px;
+		height: 125px;
 		/*border: 5px solid blue;*/
 		margin: 0 auto;
 		text-align: center;
@@ -440,7 +440,7 @@ body {
 
 	.rsvp-accommodations {
 		width: 90%;
-		height: 375px;
+		height: 340px;
 		/*border: 5px solid blue;*/
 		margin: 0 auto;
 		text-align: center;
@@ -454,8 +454,8 @@ body {
 		}
 
 	.box3 {
-		width: 45%;
-		height: 375px;
+		width: 40%;
+		height: 340px;
 		/*border: 5px solid blue;*/
 		margin: 0 auto;
 		text-align: center;
@@ -468,7 +468,7 @@ body {
 		margin: 15px auto;
 		border: 5px solid #0E2038;
 		box-shadow: -2px 2px 1px #86848F;
-		background-color: rgba(218, 232, 243, 0.5);
+		/*background-color: rgba(218, 232, 243, 0.5);*/
 		border-radius: 5px;
 	}
 
@@ -512,8 +512,8 @@ body {
 }
 
 .divider-vertical {
-	margin: 20px 0;
-	height: 150px;
+	margin: auto;
+	height: 100px;
 	width: 1px;
 	border: 1px solid #0E2038;
 }
@@ -618,7 +618,7 @@ body {
 	#weddingdivtext {
 		color: #0E2038;
 		padding: 30px 0;
-		min-height: 750px;
+		min-height: 730px;
 		margin: auto;
 		width: 60%;
 		word-wrap: break-word;
