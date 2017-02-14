@@ -661,6 +661,8 @@ body {
 		margin: 0;
 		color: #0E2038;
 		font-family: "Sue Ellen Francisco";
+		font-size: 3em !important;
+		font-weight: bold;
 	}
 
 	#leftgallerybox {
@@ -787,6 +789,49 @@ body {
 		right: 35px;
 		opacity: 0.5;
 	}
+
+	#registry-container {
+		padding: 25px;
+		margin: 0 auto;
+		width: 90%;
+		height: 500px;
+		word-wrap: break-word;
+		text-align: center;
+		border: 10px solid #0E2038;
+		border-radius: 1px;
+		box-shadow: -2px 2px 1px #86848F;
+	}
+
+		#registry-container h1 {
+			font-family: "Sue Ellen Francisco";
+			text-shadow: -2px 2px 1px #86848F;
+			color: #0E2038;
+			font-size: 3em;
+		}
+
+		#registry-container h4 {
+			font-family: "Sue Ellen Francisco";
+			font-size: 2em;
+			color: #0E2038;
+			font-size: 2.5em;
+		}
+
+	#logo-container {
+		margin: 25px auto 0px auto;
+		width: 50%;
+		display: flex;
+		justify-content: space-around;
+	}
+
+		#logo-container a {
+			background-color: transparent;
+		}
+
+		#logo-container img {
+			width: 150px;
+		}
+
+
 
 
 
