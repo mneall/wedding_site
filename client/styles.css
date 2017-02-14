@@ -106,7 +106,7 @@ body {
 	}
 
 .spacer1 {
-	min-height: 600px;
+	min-height: 625px;
 	width: 100%;
 	background-color: #fff5f0;
 	position: relative;
@@ -115,7 +115,7 @@ body {
 
 	.spacer1 .ourstory {
 		min-height: 530px;
-		width: 50%;
+		width: 60%;
 		text-align: center;
 		margin: 20px auto 0px auto;
 		padding: 0px 25px;
@@ -152,12 +152,21 @@ body {
 	}
 
 	.spacer2 {
+		height: 1000px;
+		width: 100%;
+		background-color: #fff5f0;
+		position: relative;
+		/*margin-top: 50px;*/
+	}
+
+	#main-gallery-wrapper {
 		height: 650px;
 		width: 100%;
 		background-color: #fff5f0;
 		position: relative;
-		margin-top: 50px;
 	}
+
+	
 
 		#main-gallery-desktop {
 			width: 100%;
@@ -209,7 +218,7 @@ body {
 				}
 
 			.swiper-button {
-				background-color: rgba(125, 125, 125, 0.35);
+				background-color: rgba(125, 125, 125, 0.5);
 				height: 54px;
 				width: 54px;
 				border-radius: 30px;
@@ -222,6 +231,10 @@ body {
 				padding: 7px;
 			}
 
+				.swiper-button-prev span {
+					opacity: 0.5;
+				}
+
 			.swiper-button-next {
 				right: 2%;
 				margin-top: -2%;
@@ -230,6 +243,7 @@ body {
 
 				.swiper-button-next span {
 					margin: 1px 0px 0px 10px;
+					opacity: 0.5;
 				}
 
 
@@ -298,9 +312,9 @@ body {
 
 
 	.bottom {
-		min-height: 65px;
+		min-height: 60px;
 		position: absolute;
-		bottom: 0px;
+		bottom: 2%;
 		width: 100%;
 		color: white;
 		text-align: center;
@@ -398,6 +412,78 @@ body {
 
 		}
 
+	#when-where {
+		width: 90%;
+		/*border: 5px solid orange;*/
+		margin: 0 auto;
+		display: flex;
+		justify-content: space-around;
+		height: 200px;
+	}
+
+
+	.box1 {
+		width: 50%;
+		height: 190px;
+		/*border: 5px solid blue;*/
+		margin: 0 auto 50px auto;
+		text-align: center;
+	}
+
+	.box2 {
+		width: 90%;
+		height: 150px;
+		/*border: 5px solid blue;*/
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.rsvp-accommodations {
+		width: 90%;
+		height: 375px;
+		/*border: 5px solid blue;*/
+		margin: 0 auto;
+		text-align: center;
+		display: flex;
+		justify-content: space-around;
+	}
+
+		.rsvp-accommodations h3 {
+			font-family: "Sue Ellen Francisco";
+			font-size: 2em;
+		}
+
+	.box3 {
+		width: 45%;
+		height: 375px;
+		/*border: 5px solid blue;*/
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.reservation-box {
+		height: 50px;
+		width: 200px;
+		text-align: center;
+		margin: 15px auto;
+		border: 5px solid #0E2038;
+		box-shadow: -2px 2px 1px #86848F;
+		background-color: rgba(218, 232, 243, 0.5);
+		border-radius: 5px;
+	}
+
+		.reservation-box a {
+			text-decoration: none;
+		}
+
+		.reservation-box h3 {
+			margin: 3px auto;
+    		vertical-align: middle;
+    		padding: 0;
+		}
+
+
+
 .event-date-and-location {
 	height: 125px;
 	width: 550px;
@@ -425,12 +511,18 @@ body {
 	padding: 0;
 }
 
-.divider {
+.divider-vertical {
 	margin: 20px 0;
-	height: 75%;
+	height: 150px;
 	width: 1px;
 	border: 1px solid #0E2038;
-	float: left;
+}
+
+.divider-horizontal {
+	margin: 0 auto;
+	height: 1px;
+	width: 50px;
+	border: 1px solid #0E2038;
 }
 
 	.event-title {
@@ -456,6 +548,7 @@ body {
 		margin: 15px auto 0px auto;
 		border: 5px solid #0E2038;
 		box-shadow: -2px 2px 1px #86848F;
+		border-radius: 5px;
 	}
 
 		.rsvp-box a {
@@ -523,13 +616,18 @@ body {
 		}
 
 	#weddingdivtext {
+		color: #0E2038;
 		padding: 30px 0;
+		min-height: 750px;
 		margin: auto;
-		width: 50%;
+		width: 60%;
 		word-wrap: break-word;
 		text-align: center;
-		border: 5px solid #0E2038;
+		border: 10px solid #0E2038;
 		box-shadow: -2px 2px 1px #86848F;
+		margin: 0px auto 0px auto;
+		padding: 0px 25px;
+		border-radius: 2px;
 	}
 
 	#weddingdivtext h1 {
